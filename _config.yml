@@ -10,8 +10,8 @@
 locale                   : "en-US"
 title                    : "Helios Y. Li"
 title_separator          : "-"
-name                     : &name "Helios Y. L"
-description              : &description "HKU Mechanical Engineering PhD student"
+name                     : &name "Helios Y. Li"
+description              : &description "Personal Website"
 url                      : https://heliosynl.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "heliosynl/heliosynl.github.io"
@@ -32,12 +32,12 @@ author:
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=ht5Ifj4AAAAJ&hl=en"
   impactstory      : # URL
-  orcid            : "https://orcid.org/my-orcid?orcid=0009-0004-8939-425X"
+  orcid            : "https://orcid.org/0009-0004-8939-425X"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
+  pubmed           : # URL
+  researchgate     : "https://www.researchgate.net/profile/Helios-Y-Li" # URL
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
