@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Helios Y. Li"
+title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Helios Y. Li"
 description              : &description "Personal Website"
@@ -49,7 +49,7 @@ author:
 
   # Social media
   bluesky          : # Replace this with you Bluesky username
-  facebook         : "Helios Yongnan Li" # Username
+  facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
   goodreads        : # Username
