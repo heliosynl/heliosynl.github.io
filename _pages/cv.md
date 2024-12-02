@@ -11,35 +11,36 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. in Mechanical Engineering, The University of Hong Kong, 2027 (expected)
+* B.S. in Mechanical Engineering, Beijing Institute of Technology, 2023
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming & Modeling
+  * Python
+  * C
+  * C++
+  * Matlab
+  * COMSOL
+  * Bash
+* Ab-initio Calculation
+  * ABINIT
+  * QuantumESPRESSO
+  * Material Studio
+  * YAMBO
+  * VESTA
+  * ATOMSK
+* Experimental
+  * XPS,UPS,REELS,AES (Thermo Scientific Escalab QXi)
+  * AFM-IR, Nano-FTIR, s-SNOM (Neaspec IR-neaSCOPE+s)
+  * Nano-Raman (Horiba LabRAM Odyssey Nano)
+  * UV-VIS-NIR (Agilent Cary 5000)
+  * Steady State PL (Edinburgh FLS1000)
+  * PL spectroscopy
+  * Home-built optical system
+* Others
+  * SolidWorks
+  * AutoCAD
 
 Publications
 ======
@@ -58,7 +59,3 @@ Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
