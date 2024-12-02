@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-PhD student (probationary period till 2025Jan) under supervison of Prof. Nicholas X. Fang [Google scholar](https://scholar.google.com/citations?hl=en&user=PcoqNjgAAAAJ&view_op=list_works), [HKU ME](https://www.mech.hku.hk/academic-staff/fang-x)
+PhD student (probationary period will end in 2025Jan) under supervision of Prof. Nicholas X. Fang [Google scholar](https://scholar.google.com/citations?hl=en&user=PcoqNjgAAAAJ&view_op=list_works), [HKU ME](https://www.mech.hku.hk/academic-staff/fang-x)
 
 Lab member of Prof. Nicholas Fang's Lab of Scalable and Sustainable Photonic Manufacturing [Lab Website]()
 
