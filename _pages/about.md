@@ -8,9 +8,10 @@ redirect_from:
 ---
 
 PhD student (probationary period till 2025Jan) under supervison of Prof. Nicholas X. Fang [Google scholar](https://scholar.google.com/citations?hl=en&user=PcoqNjgAAAAJ&view_op=list_works), [HKU ME](https://www.mech.hku.hk/academic-staff/fang-x)
+
 Lab member of Prof. Nicholas Fang's Lab of Scalable and Sustainable Photonic Manufacturing [Lab Website]()
 
-Interesting in the following topics:
+Research Interests
 ======================================
 - First-Principle Calculations (Density Functional Theory) in
   - Electronic-Excited States;
@@ -22,7 +23,8 @@ Interesting in the following topics:
 - Material Electromagnetic, Thermal Responses;
 - Wave Behaviors.
 
-Seeking Opportunties of:
+Seeking Cooperation Opportunities of
+===========================
 - Nanoscale electronic/optoelectronic devices fabrication & characterization;
 - System Hamiltonian & Models;
 - ...
@@ -36,7 +38,7 @@ Proposed a modeling scheme for **multiscale modeling** and mechanism analysis of
 Schema of multiscale multiphysics simulation model of laser-induced ultrasonic energy conversion. The whole model is separated into three parts of modeling, Electronic Scale, Atomistic Scale, and Microscale, covering three effects, quantum effect, ultrafast thermal and plasmonic response, and then photoacoustic effect. Models for each scales include physical phenomena with the corresponding characteristic time. The developed model will serve for light-matter interaction research and benefit to precise biomedical diagnosis.
 
 ![Fig3](/images/DataFig/2024Nov/QHTParametersElecTempDepen.png)
-Coefficients evolution in quantum energy term depending on electron temperature. (up) Thomas-Fermi kinetic energy based on local density approximation and Fermi statistic, considering chemical potential and free energy density at fully degenerate and partially degenerate description. (down) von Weizsacker gradient correction of kinetic energy, with two electron temperature dependent coefficients $\gamma$ and $\gamma '$.
+Coefficients evolution in quantum energy term depending on electron temperature. (up) Thomas-Fermi kinetic energy based on local density approximation and Fermi statistic, considering chemical potential and free energy density at fully degenerate and partially degenerate description. (down) von Weizsacker gradient correction of kinetic energy, with two electron temperature dependent coefficients \\(\gamma\\) and \\(\gamma'\\).
 
 ![Fig4](/images/DataFig/2024Nov/Comparison_bothTrans.png)
 (up) Fully degenerate quantum energy term with functionals, indicating ground state. (down) Partially degenerate quantum energy term at varying electron temperature.
