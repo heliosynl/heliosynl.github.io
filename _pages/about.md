@@ -21,9 +21,9 @@ Research Interests
   - Optoelectronic Properties;
   - Thermal Transport/ Phonon Properties.
 - Atomistic Modeling;
+- Light-Matter Interaction (Material Electromagnetic, Thermal Responses);
 - Quantum Hydrodynamic Theory;
 - 2D Material Strongly-Correlated System;
-- Material Electromagnetic, Thermal Responses;
 - Wave Behaviors.
 
 Seeking Cooperation Opportunities of
