@@ -1,49 +1,60 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Helios Yongnan Li"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+PhD student (probationary period till 2025Jan) under supervison of Prof. Nicholas X. Fang [Google scholar](https://scholar.google.com/citations?hl=en&user=PcoqNjgAAAAJ&view_op=list_works), [HKU ME](https://www.mech.hku.hk/academic-staff/fang-x)
+Lab member of Prof. Nicholas Fang's Lab of Scalable and Sustainable Photonic Manufacturing [Lab Website]()
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+Interesting in the following topics:
+======================================
+- First-Principle Calculations (Density Functional Theory) in
+  - Electronic-Excited States;
+  - Electron-Phonon Coupling;
+  - Optoelectronic Properties;
+  - Thermal Transport/ Phonon Properties.
+- Quantum Hydrodynamic Theory;
+- 2D Material Strongly-Correlated System;
+- Material Electromagnetic, Thermal Responses;
+- Wave Behaviors.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+Seeking Opportunties of:
+- Nanoscale electronic/optoelectronic devices fabrication & characterization;
+- System Hamiltonian & Models;
+- ...
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+Research Outputs
+=================================
+## Multiphysics Multiscale Laser-induced Ultrasound Modeling
+Proposed a modeling scheme for **multiscale modeling** and mechanism analysis of **light-induced ultrasound generation**, to be used for biomedical ultrasound diagnosis. By developing **electron temperature dependent quantum hydrodynamics theory**, preliminary results of **ultrafast laser energy deposition** in electronic scale and atomistic scale were obtained.
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+![Fig1](/images/DataFig/2024Nov/LHUMMSM-Abstract-Diagram.png)
+Schema of multiscale multiphysics simulation model of laser-induced ultrasonic energy conversion. The whole model is separated into three parts of modeling, Electronic Scale, Atomistic Scale, and Microscale, covering three effects, quantum effect, ultrafast thermal and plasmonic response, and then photoacoustic effect. Models for each scales include physical phenomena with the corresponding characteristic time. The developed model will serve for light-matter interaction research and benefit to precise biomedical diagnosis.
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+![Fig3](/images/DataFig/2024Nov/QHTParametersElecTempDepen.png)
+Coefficients evolution in quantum energy term depending on electron temperature. (up) Thomas-Fermi kinetic energy based on local density approximation and Fermi statistic, considering chemical potential and free energy density at fully degenerate and partially degenerate description. (down) von Weizsacker gradient correction of kinetic energy, with two electron temperature dependent coefficients $\gamma$ and $\gamma '$.
 
-**Markdown generator**
+![Fig4](/images/DataFig/2024Nov/Comparison_bothTrans.png)
+(up) Fully degenerate quantum energy term with functionals, indicating ground state. (down) Partially degenerate quantum energy term at varying electron temperature.
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+## Work Function Tunning of 4H-SiC by Atomic-level ZnO interlayer
+Provided theoretical explanation of the experimental findings from cooperators, **surface potential tunning** of 4H-SiC devices by atomic-thickness ZnO decoration, by **DFT modeling and analysis**. The close looks of DFT modeling and Badeen model at electron distribution and Fermi level **consolidated the experimental guesses**, allowing to explore the capabilities of this structure for **advanced applications of devices**.
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+![Fig5](/images/DataFig/2024Nov/Schematic-Diagram-no-data.png)
+(a) Energy level diagram illustrating the Fermi level and band gap of 4H-SiC, ALD ZnO, and electrode TiN. The dashed boxes depict the atomic configurations of 4H-SiC and ZnO. (b) Band diagram of pure 4H-SiC resistors with TiN electrodes. (c) Band diagram of 4H-SiC resistors with 3 nm ALD ZnO interlayers.
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+![Fig6](/images/DataFig/2024Nov/Only-data.png)
+DFT predicted (a), (b) electrostatic potential distribution and (c) (d) DOS and atomic layer-resolved DOS at C-face and Si-face of 4H-SiC, without and with 3 nm ALD ZnO decoration, respectively. The dashed line representing the Fermi level of the structure. Surface work function denotes the potential difference between the vacuum level near the surface and the Fermi level.
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+## Dielectric Properties of Twisted Bilayer Graphene
+Provided DFT prediction of the **interlayer distance of bilayer graphene (BLG)** with varying twisting angles. As a comparison and validation of high precision optical phase microscopy, the definition of the **corresponding "thickness" for 2D materials** at theoretical perspectives was explored by revisiting the **dielectric response of BLG**. A deeper understanding of dielectric response also benefits the **theoretical modeling** of graphene systems.
+
+![Fig7](/images/DataFig/2024Nov/vdW-distance.png)
+vdW corrections and pseudopotentials selection testing, using the well-accepted interlayer distance bulk graphite value and our measured value for AB-BLG for comparison. (b) finite-infinite BLG model for mimicking the real measuring case (c) Total energy - interlayer distance relationship with varying twisting angles, to obtain the optimal interlayer distance for each case.
+
+![Fig8](/images/DataFig/2024Nov/model-alpha.png)
+(a) - (c) Infinite-infinite atomic models used in optical calculation, for monolayer graphene, AB-BLG, t30°-BLG, respectively. For clarity, using 0° BLG represents AB-BLG, as t32° BLG for t30°-BLG. (d) DFT predicted 2D polarizability for three cases, under the framework of G0W0-BSE, G0W0-RPA, RPA, presented in imaginary part and real part separately.
