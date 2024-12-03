@@ -11,7 +11,7 @@ PhD student (probationary period will end in 2025Jan) under supervision of Prof.
 
 Lab member of Prof. Nicholas Fang's **Lab of Scalable and Sustainable Photonic Manufacturing** [Lab Website]()
 
-HKU Dragon Boat Team member
+HKU Dragon Boat Team Paddler
 
 Research Interests
 ======================================
@@ -31,18 +31,3 @@ Seeking Cooperation Opportunities of
 - Nanoscale electronic/optoelectronic devices fabrication & characterization;
 - System Hamiltonian & Models;
 - ...
-
-Research Outputs
-=================================
-## Multiphysics Multiscale Laser-induced Ultrasound Modeling
-![Fig1](/images/DataFig/2024Nov/LHUMMSM-Abstract-Diagram_low.png)
-
-![Fig2](/images/DataFig/2024Nov/Comparison_bothTrans.png)
-
-## Work Function Tunning of 4H-SiC by Atomic-level ZnO interlayer
-![Fig3](/images/DataFig/2024Nov/Schematic-Diagram-no-data.png)
-
-![Fig4](/images/DataFig/2024Nov/Only-data_low.png)
-
-## Dielectric Properties of Twisted Bilayer Graphene
-![Fig5](/images/DataFig/2024Nov/model-alpha_low.png)
