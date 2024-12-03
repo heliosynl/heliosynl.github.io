@@ -240,6 +240,7 @@ defaults:
       comments: true
       share: true
       related: true
+      toc: true
   # _pages
   - scope:
       path: ""
@@ -361,8 +362,8 @@ comments:
 giscus:
   repo:                "heliosynl/heliosynl.github.io"
   repo-id:             "R_kgDONXwtzA"
-  category:            "General"
-  category-id:         "DIC_kwDONXwtzM4Ck26I"
+  category:            "Comments"
+  category-id:         "DIC_kwDONXwtzM4Ck3x1"
   mapping:             "pathname"
   reaction-enabled:    "1"
   theme:               "light"
