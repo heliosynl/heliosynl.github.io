@@ -349,3 +349,21 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Set which comment system to use
+comments:
+  # 'disqus' / 'giscus' / 'utterances' are available
+  provider:            giscus
+
+# You must install giscus github app before use.(https://github.com/apps/giscus)
+# Make sure all variables are set properly. Check below link for detail.
+# https://giscus.vercel.app/
+giscus:
+  repo:                "heliosynl/heliosynl.github.io"
+  repo-id:             "R_kgDONXwtzA"
+  category:            "General"
+  category-id:         "DIC_kwDONXwtzM4Ck26I"
+  mapping:             "pathname"
+  reaction-enabled:    "1"
+  theme:               "light"
+  crossorigin:         "anonymous"
