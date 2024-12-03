@@ -35,14 +35,14 @@ Seeking Cooperation Opportunities of
 Research Outputs
 =================================
 ## Multiphysics Multiscale Laser-induced Ultrasound Modeling
-![Fig1](/images/DataFig/2024Nov/LHUMMSM-Abstract-Diagram.png)
+![Fig1](/images/DataFig/2024Nov/LHUMMSM-Abstract-Diagram_low.png)
 
-![Fig4](/images/DataFig/2024Nov/Comparison_bothTrans.png)
+![Fig2](/images/DataFig/2024Nov/Comparison_bothTrans.png)
 
 ## Work Function Tunning of 4H-SiC by Atomic-level ZnO interlayer
-![Fig5](/images/DataFig/2024Nov/Schematic-Diagram-no-data.png)
+![Fig3](/images/DataFig/2024Nov/Schematic-Diagram-no-data.png)
 
-![Fig6](/images/DataFig/2024Nov/Only-data.png)
+![Fig4](/images/DataFig/2024Nov/Only-data_low.png)
 
 ## Dielectric Properties of Twisted Bilayer Graphene
-![Fig8](/images/DataFig/2024Nov/model-alpha.png)
+![Fig5](/images/DataFig/2024Nov/model-alpha_low.png)
