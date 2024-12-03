@@ -2,7 +2,7 @@
 title: "Ab Initio calculation of Electron Temperature Dependent Heat Capacity and Electron Phonon Coupling Factor of Noble Metals"
 collection: talks
 type: "Conference Presentation"
-permalink: /talks/2014-02-01-talk-2
+permalink: /talks/2022-06-24-ab-initio-calculation-electron-temperature
 venue: "IEEE-MTNM 2022"
 date: 2022-06-24
 location: "Virtual Conference"
