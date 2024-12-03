@@ -219,7 +219,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  photonews:
+  portfolio:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -265,10 +265,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _photonews
+  # _portfolio
   - scope:
       path: ""
-      type: photonews
+      type: portfolio
     values:
       layout: single
       author_profile: true
