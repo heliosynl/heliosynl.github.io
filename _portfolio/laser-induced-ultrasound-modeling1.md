@@ -4,3 +4,6 @@ excerpt: "<br/><img src='/images/DataFig/2024Nov/LHUMMSM-Abstract-Diagram_low.pn
 collection: portfolio
 ---
 
+![QHTPara](/images/DataFig/2024Nov/QHTParametersElecTempDepen.png)
+
+![Comparison](/images/DataFig/2024Nov/Comparison_bothTrans.png)
