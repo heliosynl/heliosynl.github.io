@@ -24,7 +24,7 @@ author:
   avatar           : "/pictures/Profile2024Jun.JPG"
   name             : "Helios Yongnan Li 李永楠"
   pronouns         : # example: "she/her"  
-  bio              : "HKU Mechanical Engineering PhD student, HKUDB Dragon Boat Paddler, come from Macau"
+  bio              : "HKU Mechanical Engineering PhD student, HKUDB Dragon Boat Paddler"
   location         : "Hong Kong"
   employer         : "The University of Hong Kong"
   uri              : # URL
@@ -102,14 +102,14 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
+  allowedFields          : ['name', 'message']
+  branch                 : "master" # "master", "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : true
   path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+  requiredFields         : ['name', 'message']
   transforms:
     email                : "md5"
   generatedFields:
@@ -352,5 +352,6 @@ compress_html:
     envs: development
 
 # Set which comment system to use
+# custom discourse disqus facebook google-plus staticman
 comments:
   provider:            custom

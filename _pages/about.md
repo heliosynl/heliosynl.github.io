@@ -31,3 +31,9 @@ Seeking Cooperation Opportunities of
 - Nanoscale electronic/optoelectronic devices fabrication & characterization;
 - System Hamiltonian & Models;
 - ...
+
+News
+==========================
+{% for post in site.posts %}
+  {% include archive-post.html %}
+{% endfor %}
