@@ -6,7 +6,7 @@ permalink: /publication/2024-07-14-achieving-peta-ohm
 excerpt: 'Preprint version of cooperative work with Prof. Yanxia Cui'
 date: 2024-07-14
 venue: 'arXiv'
-paperurl: 'https://heliosynl.github.io/files/arXiv2024-achieving-peta-ohm.pdf'
+paperurl: '/files/arXiv2024-achieving-peta-ohm.pdf'
 citation: 'Yuying, Xi., Helios Y., Li., Guohui, Li., et al. (2024). &quot;Achieving Peta-Ohm Resistance for Semi-Insulating 4H-SiC Devices by Atomic Layer Deposition.&quot; <i>arXiv</i>. 2407.10208.'
 ---
 
