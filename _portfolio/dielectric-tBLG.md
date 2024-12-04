@@ -1,6 +1,6 @@
 ---
 title: "Dielectric Properties of Twisted Bilayer Graphene"
-excerpt: "Interlayer distance of twisted bilayer graphene with van der Waals correction <br/><img src='/images/DataFig/2024Nov/vdW-distance_low.png'>"
+excerpt: "Collaborated with Prof. Renjie Zhou, CUHK<br/><img src='/images/DataFig/2024Nov/vdW-distance_low.png'>"
 collection: portfolio
 date: 2024-12-01
 ---
