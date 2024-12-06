@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-PhD student (probationary period will end in 2025Jan) under supervision of Prof. Nicholas X. Fang [Google scholar](https://scholar.google.com/citations?hl=en&user=PcoqNjgAAAAJ&view_op=list_works), [HKUstaff](https://www.mech.hku.hk/academic-staff/fang-x) in Mechanical Engineering, The University of Hong Kong
+PhD student (probationary period will end in 2025Jan) under supervision of **Prof. Nicholas X. Fang** [Google scholar](https://scholar.google.com/citations?hl=en&user=PcoqNjgAAAAJ&view_op=list_works), [HKUstaff](https://www.mech.hku.hk/academic-staff/fang-x) in Mechanical Engineering, The University of Hong Kong
 
 Lab member of Prof. Nicholas Fang's **Lab of Scalable and Sustainable Photonic Manufacturing** [Lab Website]()
 
@@ -15,7 +15,7 @@ HKU Dragon Boat Team Paddler
 
 Research Interests
 ======================================
-- First-Principle Calculations (Density Functional Theory) in
+- Ab-initio Calculation (Density Functional Theory) in
   - Electronic-Excited States;
   - Electron-Phonon Coupling;
   - Optoelectronic Properties;

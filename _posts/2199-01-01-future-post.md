@@ -21,3 +21,8 @@ You can have many headings
 
 Aren't headings cool?
 ------
+
+figure in html
+<br/><img src='/images/DataFig/2024Nov/LHUMMSM-Abstract-Diagram_low.png'>
+figure in md
+![Fig](/images/DataFig/2024Nov/AuABINITData.png)
