@@ -107,6 +107,7 @@ high symmetry path can check by upload **bulk** pwscf input file to [seekpath](h
 
 4. bands.x post-processing
 5. plotbands.x
+
 ```
 > plotband.x
      Input file > 4HSiCslabC_bands.dat
