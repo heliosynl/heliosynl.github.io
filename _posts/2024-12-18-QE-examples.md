@@ -8,8 +8,8 @@ tags:
   - PWscf
   - notes
 ---
-
-# pw.x 
+example codes
+# pw.x
 ```
 &CONTROL
   title = ' '

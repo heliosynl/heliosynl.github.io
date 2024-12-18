@@ -10,6 +10,7 @@ tags:
 ---
 ## SCF convergence problems
 ### parameters recommendations
+
 #### CONTROL namecard
 - `nstep = 1000`
 - `forc_conv_thr = 1e-5` in Ry/Bohr, sometimes can not converge, maybe a little bit too high for some cases, equivalent to 2.57e-4 eV/Angstr
