@@ -3,8 +3,8 @@ title: 'QE PWscf Error shooting'
 date: 2024-12-18
 type: notes
 tags:
-  - ab initio
-  - quantum espresso
+  - Ab Initio
+  - Quantum Espresso
   - PWscf
   - notes
 ---
