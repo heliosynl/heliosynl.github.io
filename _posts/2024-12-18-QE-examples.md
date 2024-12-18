@@ -95,6 +95,7 @@ K_POINTS automatic
 1. scf
 2. nscf
 3. use `calculation = 'bands'`
+
 ```
 K_POINTS crystal_b
 num_of_high_symmetry_points
@@ -124,11 +125,14 @@ output file (ps) > (press enter)
 stopping ...
 ```
 generate several gnuplot files, splited by high-symmetry points
+
 6. gnuplot
 ```
 > gnuplot -p -e "plot 'gnuplot.1.1' w l, 'gnuplot.2.1' w l, 'gnuplot.3.1' w l"
 ```
+
 # bands.x
+
 ```
 &BANDS
   prefix = ''
@@ -140,6 +144,7 @@ generate several gnuplot files, splited by high-symmetry points
 will get _bands.dat, _bands.dat.gnu, _bands.dat.rap
 
 # hp.x
+
 ```
 &inputhp
   prefix = ''
@@ -154,6 +159,7 @@ will get _bands.dat, _bands.dat.gnu, _bands.dat.rap
 ```
 
 # dos.x
+
 ```
 &dos
   prefix  = ''
@@ -167,6 +173,7 @@ will get _bands.dat, _bands.dat.gnu, _bands.dat.rap
 ```
 
 # projwfc.x
+
 ```
 &projwfc
   prefix  = ''
@@ -182,9 +189,10 @@ will get _bands.dat, _bands.dat.gnu, _bands.dat.rap
 L=1:
 Ordering: p_z  p_x  p_y
 L=2:
-Ordering: d_(z^2 )  d_xz  d_zy  d_(x^2−y^2 )  d_xy
+Ordering: d_(z^2 )  d_xz  d_zy  d_(x^2-y^2 )  d_xy
 
 # pp.x
+
 ```
 &inputpp
   prefix  = ' '
