@@ -1,6 +1,6 @@
 ---
 title: 'QE PWscf Error shooting'
-date: 2199-12-18
+date: 2024-12-18
 type: notes
 tags:
   - ab initio
