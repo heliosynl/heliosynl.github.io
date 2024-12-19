@@ -8,7 +8,7 @@ tags:
   - PWscf
   - notes
 ---
-
+Error shooting for Quantum Epresso PWscf, collecting from internet and by my experience.
 
 ## SCF convergence problems
 ### parameters recommendations

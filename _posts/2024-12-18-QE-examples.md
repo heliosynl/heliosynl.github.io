@@ -8,9 +8,8 @@ tags:
   - PWscf
   - notes
 ---
+Example input files for Quantum Espresso PWscf and some extensions.
 
-
-example codes
 # pw.x
 
 ```

@@ -6,8 +6,7 @@ tags:
   - bash
   - notes
 ---
-
-
+Coding notes for bash/sh command line in ubuntu.
 
 ```
 #!/bin/bash
