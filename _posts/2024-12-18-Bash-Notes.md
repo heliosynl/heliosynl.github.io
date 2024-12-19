@@ -7,6 +7,8 @@ tags:
   - notes
 ---
 
+
+
 ```
 #!/bin/bash
 ```
@@ -21,6 +23,10 @@ cp ${var} file
 done
 ```
 
+`command 1 && command 2` go to next command only if the previous one is successful
+
+`command > log.txt 2>&1 &` save log and error to log.txt file. The first `>` refers to the standard output redirection (to log.txt here). The second `2>` refers to the error output redirection, it was redirected to the 'log' category by `&1` (same log.txt here). The last `&` refers to no standard output and run in the background.
+
 |representation||
 |-|-|
 |``${}``|as variable|
@@ -33,8 +39,8 @@ done
 ``[]``|condition command, containing the essence of condition
 ``[ -f "abc.abi" ]``|determine whether abc.abi is a file
 
-``[]`` can be a comparison between two strings:
-``[ "$str1" = "$str2" ]``
+``[]`` can be a comparison between two strings:`[ "$str1" = "$str2" ]`
+
 | can use ||
 |-|-|
 -f|File
@@ -84,6 +90,7 @@ tar -xf ./file.tar
 ```
 tar -zcvf name-of-archive.tar.gz ./directory
 ```
+
 |tags||
 |-|-|
 -z|Compress the archive with gzip
