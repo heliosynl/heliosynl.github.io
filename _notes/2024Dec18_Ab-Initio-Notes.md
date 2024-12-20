@@ -1,12 +1,12 @@
 ---
 title: "Ab Initio Notes"
 date: 2024-12-18
-type: records
+excerpt: 'Some notes for Ab Initio Calculation/ Quantum Mechanics'
+type: notes
 tags:
   - Ab Initio
+  - notes
 ---
-Some notes for Ab Initio Calculation/ Quantum Mechanics
-
 # Constant
 ```python
 # Energy
