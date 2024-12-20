@@ -231,6 +231,9 @@ collections:
   notes:
     output: true
     permalink: /:collection/:path/
+  codes:
+    output: true
+    permalink: /:collection/:path/
 
 # These settings control how pages and collections are included in the site
 defaults:
@@ -240,6 +243,18 @@ defaults:
       type: posts
     values:
       layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+  # _notes
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: single_notes
       author_profile: true
       read_time: true
       comments: true
@@ -296,19 +311,14 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _notes
+  # _codes
   - scope:
       path: ""
-      type: notes
+      type: codes
     values:
-      layout: single_notes
+      layout: single
       author_profile: true
       read_time: true
-      comments: true
-      share: true
-      related: true
-      toc: true
-
 
 # Sass/SCSS
 sass:

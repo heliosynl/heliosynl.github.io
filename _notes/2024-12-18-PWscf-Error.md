@@ -1,6 +1,7 @@
 ---
 title: 'QE PWscf Error shooting'
 date: 2024-12-18
+excerpt: 'Error shooting for Quantum Epresso PWscf, collecting from internet and by my experience.'
 type: notes
 tags:
   - Ab Initio
@@ -8,8 +9,6 @@ tags:
   - PWscf
   - notes
 ---
-Error shooting for Quantum Epresso PWscf, collecting from internet and by my experience.
-
 ## SCF convergence problems
 ### parameters recommendations
 #### CONTROL namecard

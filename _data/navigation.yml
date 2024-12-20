@@ -22,6 +22,9 @@ main:
   
   - title: "Notes"
     url: /notes/
+
+  - title: "Codes"
+    url: /codes/
     
   - title: "CV"
     url: /cv/

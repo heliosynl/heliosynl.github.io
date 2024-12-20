@@ -1,13 +1,12 @@
 ---
 title: "Bash Notes"
 date: 2024-12-18
+excerpt: 'Coding notes for bash/sh command line in ubuntu.'
 type: notes
 tags:
   - bash
   - notes
 ---
-Coding notes for bash/sh command line in ubuntu.
-
 ```
 #!/bin/bash
 ```

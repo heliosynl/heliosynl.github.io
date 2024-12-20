@@ -1,6 +1,7 @@
 ---
 title: 'QE PWscf Input Examples'
 date: 2024-12-18
+excerpt: 'Example input files for Quantum Espresso PWscf and some extensions.'
 type: notes
 tags:
   - Ab Initio
@@ -8,8 +9,6 @@ tags:
   - PWscf
   - notes
 ---
-Example input files for Quantum Espresso PWscf and some extensions.
-
 # pw.x
 
 ```
@@ -99,13 +98,15 @@ K_POINTS automatic
 
 ```
 K_POINTS crystal_b
-num_of_high_symmetry_points
+4 ! num_of_high_symmetry_points
 0.0000000000	0.0000000000	0.0000000000 30 ! Gamma
 0.5000000000	0.0000000000	0.0000000000 20 ! M
-0.3333333333	0.3333333333	0.0000000000 20 ! K
-0.0000000000	0.0000000000	0.0000000000 30 ! Gamma
+0.3333333333	0.3333333333	0.0000000000 30 ! K
+0.0000000000	0.0000000000	0.0000000000 20 ! Gamma
 ```
-high symmetry path can check by upload **bulk** pwscf input file to [seekpath](https://www.materialscloud.org/work/tools/seekpath). High symmetry point coordinates are in **reduced form**, in reduced first Brillouin zone!
+The numbers following the coordinates are, the point interval between this high symm. point to the next one while doing interpolating. High symmetry path can check by upload **bulk** pwscf input file to [seekpath](https://www.materialscloud.org/work/tools/seekpath). High symmetry point coordinates are in **reduced form**, in reduced first Brillouin zone!
+
+Can also use Python script [KptPath](/codes/kptpath/) with `K_POINTS crystal`, same function with `K_POINTS crystal_b`.
 
 ### 4. bands.x post-processing
 ### 5. plotbands.x
