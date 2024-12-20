@@ -5,6 +5,7 @@ type: records
 tags:
   - Ab Initio
 ---
+Some notes for Ab Initio Calculation/ Quantum Mechanics
 
 # Constant
 ```python
