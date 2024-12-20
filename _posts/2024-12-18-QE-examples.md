@@ -131,7 +131,7 @@ generate several gnuplot files, splited by high-symmetry points
 
 ### 6. gnuplot
 ```
-> gnuplot -p -e "plot 'gnuplot.1.1' w l, 'gnuplot.2.1' w l, 'gnuplot.3.1' w l"
+gnuplot -p -e "plot 'gnuplot.1.1' w l, 'gnuplot.2.1' w l, 'gnuplot.3.1' w l"
 ```
 
 # bands.x
