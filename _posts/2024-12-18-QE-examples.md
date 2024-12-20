@@ -1,5 +1,5 @@
 ---
-title: 'QE PWscf examples'
+title: 'QE PWscf Input Examples'
 date: 2024-12-18
 type: notes
 tags:
@@ -105,10 +105,12 @@ num_of_high_symmetry_points
 0.3333333333	0.3333333333	0.0000000000 20 ! K
 0.0000000000	0.0000000000	0.0000000000 30 ! Gamma
 ```
-high symmetry path can check by upload **bulk** pwscf input file to [seekpath](https://www.materialscloud.org/work/tools/seekpath)
+high symmetry path can check by upload **bulk** pwscf input file to [seekpath](https://www.materialscloud.org/work/tools/seekpath). High symmetry point coordinates are in **reduced form**, in reduced first Brillouin zone!
 
 4. bands.x post-processing
 5. plotbands.x
+
+don't trust its output of `high-symmetry point: `, it is in **cartesian coordinates**, but we want high symm. point in **crystal/reduced coordinates**!
 
 ```
 > plotband.x
@@ -127,7 +129,7 @@ stopping ...
 ```
 generate several gnuplot files, splited by high-symmetry points
 
-6. gnuplot
+1. gnuplot
 ```
 > gnuplot -p -e "plot 'gnuplot.1.1' w l, 'gnuplot.2.1' w l, 'gnuplot.3.1' w l"
 ```
