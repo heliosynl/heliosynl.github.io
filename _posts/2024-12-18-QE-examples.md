@@ -93,9 +93,9 @@ K_POINTS automatic
 ```
 
 ## band structure calculation
-1. scf
-2. nscf
-3. use `calculation = 'bands'`
+### 1. scf
+### 2. nscf
+### 3. use `calculation = 'bands'`
 
 ```
 K_POINTS crystal_b
@@ -107,8 +107,8 @@ num_of_high_symmetry_points
 ```
 high symmetry path can check by upload **bulk** pwscf input file to [seekpath](https://www.materialscloud.org/work/tools/seekpath). High symmetry point coordinates are in **reduced form**, in reduced first Brillouin zone!
 
-4. bands.x post-processing
-5. plotbands.x
+### 4. bands.x post-processing
+### 5. plotbands.x
 
 don't trust its output of `high-symmetry point: `, it is in **cartesian coordinates**, but we want high symm. point in **crystal/reduced coordinates**!
 
@@ -129,7 +129,7 @@ stopping ...
 ```
 generate several gnuplot files, splited by high-symmetry points
 
-1. gnuplot
+### 6. gnuplot
 ```
 > gnuplot -p -e "plot 'gnuplot.1.1' w l, 'gnuplot.2.1' w l, 'gnuplot.3.1' w l"
 ```
