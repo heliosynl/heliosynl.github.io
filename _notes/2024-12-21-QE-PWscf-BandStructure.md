@@ -10,7 +10,7 @@ tags:
   - notes
 ---
 Example: 4H-SiC crystal
-![Crystal](/_notes/2024-12-21-QE-PWscf-BandStructure/4H-SiCmodel.png)
+<br/><img src='/images/notes/2024-12-21-QE-PWscf-BandStructure/4H-SiCmodel.png' width="400">
 
 # 0. structural optimization, kpt convergence, ecut convergence, smearing convergence
 **Do before any calculation**
@@ -146,4 +146,4 @@ generate several gnuplot files, splited by high-symmetry points
 gnuplot -p -e "plot 'gnuplot.1.1' w l, 'gnuplot.2.1' w l, 'gnuplot.3.1' w l"
 ```
 
-![BulkBand](/_notes/2024-12-21-QE-PWscf-BandStructure/4H-SiCbulk.png)
+![BulkBand](/images/notes/2024-12-21-QE-PWscf-BandStructure/4H-SiCbulk.png)
