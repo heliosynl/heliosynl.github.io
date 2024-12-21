@@ -19,14 +19,14 @@ tags:
   pseudo_dir = '/home/yongnanli08/PP'
   calculation = 'scf'
   nstep = 1000 
-  iprint = 1 ! write band information each iprint step
-  tprnfor = .true. ! calculation of force
-  tstress = .true.
+  iprint = 1                ! write band information each iprint step
+  tprnfor = .true.          ! calculation of force
+  tstress = .true.          ! calculation of stress
   restart_mode = 'from_scratch'
   verbosity = 'high'
   disk_io = 'high'
-  forc_conv_thr = 1e-5
-  etot_conv_thr = 1e-6
+  forc_conv_thr = 1e-5      ! no need if not relax vc-relax
+  etot_conv_thr = 1e-6      ! no need if not relax vc-relax
   ! =========== Berry phase calculation ===============
   ! lelfield = .true.
   ! nberrycyc = 1
@@ -43,16 +43,19 @@ tags:
   occupations = 'smearing'
   smearing = 'mp'
   degauss = 1e-3 ! about 300 K
-  nosym = .true.
-  force_symmorphic = .true. ! force the symmetry group to be symmorphic, for yambo
+  nosym = .true.            ! no need, use for low-symmetric system (low-dimensional, etc)
+  force_symmorphic = .true. ! no need, force the symmetry group to be symmorphic, for yambo init
   ! =========== DFT D3 2009 =============== 
-  vdw_corr = 'DFT-D3'
-  dftd3_version = 6
+  ! vdw_corr = 'DFT-D3'
+  ! dftd3_version = 6
+  ! =========== Assume isolation ===============
+  ! assume_isolated = 'esm' ! 2D, no need esm_bc
+  ! esm_bc = 'bc1'
   ! =========== Dipole correction ===============
-  edir = 3 ! z-axis
-  eamp = 0.0
-  emaxpos = 0.82
-  eopreg = 0.02
+  ! edir = 3 ! z-axis
+  ! eamp = 0.0
+  ! emaxpos = 0.5
+  ! eopreg = 0.02
 /
  
 &ELECTRONS
@@ -63,7 +66,7 @@ tags:
   conv_thr =  1e-11 ! can be 1e-9 for relaxation
   diagonalization = 'david' ! david cg ppcg
   startingwfc='random'
-  diago_thr_init = 5e-6 ! for charge density, 1e-5, can reduce if not converged
+  diago_thr_init = 5e-6     ! for charge density, 1e-5, can reduce if not converged
   ! diago_full_acc = .true. ! all empty states are diagonalized at the same level of accuracy, need in nscf
 /
  
@@ -89,50 +92,6 @@ H         0.00000000        0.00000000        0.00299400
 K_POINTS automatic
 2 2 1  1 1 0
 
-```
-
-## band structure calculation
-### 1. scf
-### 2. nscf
-### 3. use `calculation = 'bands'`
-
-```
-K_POINTS crystal_b
-4 ! num_of_high_symmetry_points
-0.0000000000	0.0000000000	0.0000000000 30 ! Gamma
-0.5000000000	0.0000000000	0.0000000000 20 ! M
-0.3333333333	0.3333333333	0.0000000000 30 ! K
-0.0000000000	0.0000000000	0.0000000000 20 ! Gamma
-```
-The numbers following the coordinates are, the point interval between this high symm. point to the next one while doing interpolating. High symmetry path can check by upload **bulk** pwscf input file to [seekpath](https://www.materialscloud.org/work/tools/seekpath). High symmetry point coordinates are in **reduced form**, in reduced first Brillouin zone!
-
-Can also use Python script [KptPath](/codes/kptpath/) with `K_POINTS crystal`, same function with `K_POINTS crystal_b`.
-
-### 4. bands.x post-processing
-### 5. plotbands.x
-
-don't trust its output of `high-symmetry point: `, it is in **cartesian coordinates**, but we want high symm. point in **crystal/reduced coordinates**!
-
-```
-> plotband.x
-     Input file > 4HSiCslabC_bands.dat
-Reading   24 bands at     71 k-points
-Range:  -13.9960    7.1910eV  Emin, Emax, [firstk, lastk] > -6,8
-high-symmetry point:  0.0000 0.0000 0.0000   x coordinate   0.0000
-high-symmetry point:  0.5000 0.2887 0.0000   x coordinate   0.5774
-high-symmetry point:  0.3333 0.5774 0.0000   x coordinate   0.9107
-high-symmetry point:  0.0000 0.0000 0.0000   x coordinate   1.5773
-output file (gnuplot/xmgr) > gnuplot
-bands in gnuplot/xmgr format written to file gnuplot
-
-output file (ps) > (press enter)
-stopping ...
-```
-generate several gnuplot files, splited by high-symmetry points
-
-### 6. gnuplot
-```
-gnuplot -p -e "plot 'gnuplot.1.1' w l, 'gnuplot.2.1' w l, 'gnuplot.3.1' w l"
 ```
 
 # bands.x

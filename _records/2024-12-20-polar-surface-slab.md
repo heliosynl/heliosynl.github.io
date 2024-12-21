@@ -1,10 +1,11 @@
 ---
-title: "SiC surface slab modeling"
+title: "Polar surface slab model"
 date: 2024-12-20
 type: records
 ---
 
 # NJP2010_A comparative DFT study of electronic properties
+SiC surface slab modeling
 ## Atomic modeling
 MOSFET, the role of electric field and the influence of stacking sequence to the surface electronic and structural properties, for 2H- 4H- 6H-SiC
 
