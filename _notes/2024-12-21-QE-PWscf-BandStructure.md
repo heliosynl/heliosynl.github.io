@@ -1,6 +1,6 @@
 ---
 title: 'QE PWscf Band Structures'
-date: 2024-12-18
+date: 2024-12-21
 excerpt: 'Quantum Espresso PWscf Band Structure Calculation'
 type: notes
 tags:
