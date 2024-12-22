@@ -257,9 +257,6 @@ defaults:
       layout: single_notes
       author_profile: true
       read_time: true
-      comments: true
-      share: true
-      related: true
       toc: true
   # _pages
   - scope:
