@@ -162,8 +162,9 @@ Ordering: d_(z^2 )  d_xz  d_zy  d_(x^2-y^2 )  d_xy
   outdir  = './calout'
   filplot = 'qeppoutput' ! file saving charge density in qe format
   plot_num=  ! Differential charge density 9, electrostatic potential (V_bare + V_H) 11, ELF 8
- /
+/
 
+! only need in 3D file outputing (charge density, ELF)
 &plot
   nfile = 1
   iflag = 3 ! 3D ploting

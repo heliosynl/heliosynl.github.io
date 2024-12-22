@@ -11,14 +11,14 @@ tags:
 ```python
 # Energy
 # To Ry
-Conv_Ha2Ry=2
-Conv_J2Ry=4.587424e+17
-Conv_eV2Ry=7.349862e-02
-Conv_K2Ry=6.333624e-06
-Conv_GHz2Ry=3.039660e-07
+ConvHa2Ry=2
+ConvJ2Ry=4.587424e+17
+ConveV2Ry=7.349862e-02
+ConvK2Ry=6.333624e-06
+ConvGHz2Ry=3.039660e-07
 
-Conv_forceau2eVAng=25.710907566423526 # Ry/Bohr to eV/Ang
-Conv_Bohr2Angstr=0.52918 # Bohr same to a.u.
+Convforceau2eVAng=25.710907566423526 # Ry/Bohr to eV/Ang
+ConvBohr2Angstr=0.52918 # Bohr same to a.u.
 
 Avogadro=6.02214076e23
 pi=np.pi

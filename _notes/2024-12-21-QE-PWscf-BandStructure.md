@@ -90,6 +90,7 @@ K_POINTS automatic
 ```
 
 # 2. nscf
+actually **no need** (bands calculation is also nscf), the charge density has been determined in scf
 - `calculation = 'scf'` to `calculation = 'nscf'`
 - k pt `8 8 8` to `16 16 16`
 
