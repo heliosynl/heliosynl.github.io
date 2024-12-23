@@ -1,15 +1,16 @@
 ---
-title: 'Yambo for Linear Optics responses'
-date: 2024-12-23
-excerpt: 'Yambo linear optics responses calculation'
-permalink: /posts/2024/blog1223/
+title: 'Yambo Low Dimensional System Treatments'
+date: 2024-12-24
+excerpt: 'Yambo correction for optical response of low dimensional systems'
+permalink: /posts/2024/blog1224/
 type: blog
 tags:
   - Ab Initio
   - Yambo
-  - Linear Optics
   - blog
 ---
+# Low dimensional system
+
 Optical responses of materials can be computed based on linear response theory, in which considering the electron density response of system to the external electric field. This is linked to the electric displacement field and the polarization field in Maxwell equations:
 
 $$\vec D(\omega)=\varepsilon_0 \varepsilon_r(\omega) \vec E(\omega)=\varepsilon_0 (1+\chi) \vec E$$
@@ -213,16 +214,14 @@ ETStpsXd= 1001                   # [Xd] Total Energy steps
  1.000000 | 0.000000 | 0.000000 |        # [Xd] [cc] Electric Field
 %
 ```
-
 |||
 |-|-|
 |QpntsRXd|q point, macroscopic use 1,1 ok|
-|BndsRnXd|bands, include as much as possible, usually around bandgap|
+|BndsRnXd|bands, include as much as possible, always around bandgap|
 |EnRngeXd|Energy range of output|
 |DmRngeXd|Damping, usually is ok to default|
 |ETStpsXd|Energy step, for 10eV length I like 1001|
 |LongDrXd|Response direction, cartersian direction|
-
 ## output log
 usually start with `r-jobname-....` as, containing same information as `r_setup`
 
@@ -325,11 +324,7 @@ can be check in `o-jobname` by finding
 in RL
 
 ## low dimensional case (with -r)
-If low dimensional system is used (with `-r`), Yambo will generate new output file `o-jobname.alpha`, and `o-jobname.eps` is **useless**. In such cases, direct epsilon output will be something like full of vacuum, that is, Im(eps) ~ 0 and Re(eps) ~ 1. It is normal and all of the dielectric information is enbodied in polarizability file `o-jobname.alpha` instead. Polarizability is defined as (2D materials)
-
-$$\alpha_{2D}(\omega)=-\lim_{\vec q\rightarrow 0}\frac{L}{4\pi\vec q^2}\chi_{00}(\vec q,\omega)$$
-
-See more in [YamboLowD](/posts/2024/blog1224/)
+If low dimensional system is used (with `-r`), Yambo will generate new output file `o-jobname.alpha`, and `o-jobname.eps` is **useless**. In such cases, direct epsilon output will be something like full of vacuum, that is, Im(eps) ~ 0 and Re(eps) ~ 1. It is normal and all of the dielectric information is enbodied in polarizability file `o-jobname.alpha` instead.
 
 Below is the polarizability of monolayer graphene and bilayer graphene as demonstration.
-![alpha](/images/notes/2024-12-23-Yambo-Optics/graphenealpha.png)
+![alpha]()
