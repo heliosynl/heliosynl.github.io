@@ -2,14 +2,24 @@
 title: 'QE PWscf Band Structures'
 date: 2024-12-21
 excerpt: 'Quantum Espresso PWscf Band Structure Calculation'
-type: notes
+permalink: /posts/2024/blog1221/
+type: blog
 tags:
   - Ab Initio
   - Quantum Espresso
   - PWscf
-  - notes
+  - blog
 ---
-Example: 4H-SiC crystal
+Band structure refers to the **electronic band structure** in solid state physics. In general, band structure is the **k-E** (or k-$$\omega$$) relation of the electrons distrbuting in crystaline, periodic systems. By analyzing band structure, electronic properties such as
+- band gap and its type (direct or indirect), high symmetry points
+- phase velocity ($v_{phase}=\frac{\omega}{k}$)
+- group velocity ($v_{gropu}=\frac{d\omega}{dk}$)
+- Fermi velocity
+- effective mass of charge carriers
+
+The following is an example of the band structure calculation for 4H-SiC bulk crystal in 1x1x1 unit cell.
+
+Example: 4H-SiC crystal, typical wide-bandgap semiconductor, usually for high-power electronics, substrate in semiconductor industry.
 <br/><img src='/images/notes/2024-12-21-QE-PWscf-BandStructure/4H-SiCmodel.png' width="400">
 
 # 0. structural optimization, kpt convergence, ecut convergence, smearing convergence
@@ -148,3 +158,5 @@ gnuplot -p -e "plot 'gnuplot.1.1' w l, 'gnuplot.2.1' w l, 'gnuplot.3.1' w l"
 ```
 
 ![BulkBand](/images/notes/2024-12-21-QE-PWscf-BandStructure/4H-SiCbulk.png)
+
+Obviously an indirect band gap is found, between Gamma point as VBM and K point as CBM.
