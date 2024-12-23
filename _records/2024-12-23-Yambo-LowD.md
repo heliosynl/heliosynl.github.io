@@ -1,13 +1,13 @@
 ---
 title: 'Yambo Low Dimensional System Treatments'
-date: 2024-12-24
+date: 2024-12-23
 excerpt: 'Yambo correction for optical response of low dimensional systems'
-permalink: /posts/2024/blog1224/
-type: blog
+# permalink: /posts/2024/blog1224/
+type: records #blog
 tags:
   - Ab Initio
   - Yambo
-  - blog
+  - records #blog
 ---
 # Low dimensional system
 

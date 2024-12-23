@@ -1,7 +1,7 @@
 ---
 title: 'QE PWscf Band Structures'
 date: 2024-12-21
-excerpt: 'Quantum Espresso PWscf Band Structure Calculation'
+excerpt: 'Quantum Espresso PWscf band structure calculation'
 permalink: /posts/2024/blog1221/
 type: blog
 tags:
@@ -12,8 +12,8 @@ tags:
 ---
 Band structure refers to the **electronic band structure** in solid state physics. In general, band structure is the **k-E** (or k-$$\omega$$) relation of the electrons distrbuting in crystaline, periodic systems. By analyzing band structure, electronic properties such as
 - band gap and its type (direct or indirect), high symmetry points
-- phase velocity ($v_{phase}=\frac{\omega}{k}$)
-- group velocity ($v_{gropu}=\frac{d\omega}{dk}$)
+- phase velocity ($$v_{phase}=\frac{\omega}{k}$$)
+- group velocity ($$v_{group}=\frac{d\omega}{dk}$$)
 - Fermi velocity
 - effective mass of charge carriers
 

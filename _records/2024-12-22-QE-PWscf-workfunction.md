@@ -1,7 +1,14 @@
 ---
-title: "work function"
+title: "QE PWscf Slab Work Function"
 date: 2024-12-22
-type: records
+excerpt: 'Quantum Espresso PWscf slab model work function calculation'
+# permalink: /posts/2024/blog1224/
+type: records #blog
+tags:
+  - Ab Initio
+  - Quantum Espresso
+  - PWscf
+  - records #blog
 ---
 
 # 0. structural optimization, kpt convergence, ecut convergence, smearing convergence
