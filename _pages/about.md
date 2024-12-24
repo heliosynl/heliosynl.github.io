@@ -11,7 +11,7 @@ PhD student (probationary period will end in 2025Jan) under supervision of **Pro
 
 Lab member of Prof. Nicholas Fang's **Lab of Scalable and Sustainable Photonic Manufacturing** [Lab Website]()
 
-HKU Dragon Boat Team Paddler
+HKU Dragon Boat Team Paddler [HKUDB IG](https://www.instagram.com/hkudb/)
 
 Research Interests
 ======================================
