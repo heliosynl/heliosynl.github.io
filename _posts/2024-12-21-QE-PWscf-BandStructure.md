@@ -135,7 +135,7 @@ will get _bands.dat, _bands.dat.gnu, _bands.dat.rap
 
 don't trust its output of `high-symmetry point: `, it is in **cartesian coordinates**, but we want high symm. point in **crystal/reduced coordinates**!
 
-```
+```sh
 > plotband.x
      Input file > 4HSiCslabC_bands.dat
 Reading   24 bands at     71 k-points
@@ -153,8 +153,8 @@ stopping ...
 generate several gnuplot files, splited by high-symmetry points
 
 # 6. gnuplot
-```
-gnuplot -p -e "plot 'gnuplot.1.1' w l, 'gnuplot.2.1' w l, 'gnuplot.3.1' w l"
+```sh
+gnuplot -p -e "plot 'gnuplot.1.1' w l, 'gnuplot.2.1' w l, 'gnuplot.3.1' w l, [0:1.5773] 10.5433 w l t 'Fermi level'"
 ```
 
 ![BulkBand](/images/notes/2024-12-21-QE-PWscf-BandStructure/4H-SiCbulk.png)

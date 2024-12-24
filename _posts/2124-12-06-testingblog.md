@@ -1,9 +1,11 @@
 ---
 title: "testingblog"
 date: 2124-12-06
-permalink: /posts/2024/12/blog-post-2/
+excerpt: ''
+permalink: /posts/2024/blog1206/
 type: blog
 tags:
   - blog
 ---
 testing
+<br/><img src='' width="400">

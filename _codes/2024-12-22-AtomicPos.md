@@ -4,7 +4,7 @@ collection: codes
 date: 2024-12-22
 excerpt: 'Reading atomic positions, ordering, classifying, from QE PWscf format/VESTA (get in text)'
 codeurl: '/files/codes/readAtomicPos_PW.py'
-permalink: /codes/kptpath/
+permalink: /codes/atomicpos/
 ---
 only work for a & b axes perpendicular to c axis now.
 
