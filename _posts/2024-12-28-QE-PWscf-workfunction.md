@@ -1,17 +1,18 @@
 ---
 title: "QE PWscf Slab Work Function"
-date: 2024-12-22
+date: 2024-12-28
 excerpt: 'Quantum Espresso PWscf slab model work function calculation'
-# permalink: /posts/2024/blog1224/
-type: records #blog
+permalink: /posts/2024/blog1228/
+type: blog
 tags:
   - Ab Initio
   - Quantum Espresso
   - PWscf
-  - records #blog
+  - blog
 ---
 # Atomic Modeling
 See [SlabModeling](/posts/2024/blog1222/) for slab modeling
+If pseudo-Hydrogen is using, the workfunciton at H-attached side is not meaningful.
 
 # 0. structural optimization, kpt convergence, ecut convergence, smearing convergence
 **Do before any calculation**
@@ -19,7 +20,7 @@ See [SlabModeling](/posts/2024/blog1222/) for slab modeling
 
 # 2. nscf
 
-# 3. electronstatic potential postprocessing
+# 3. Electronstatic potential postprocessing
 `pp.x`
 
 ```
@@ -58,8 +59,8 @@ Producing `4H-SiCslabSi_pot`
 4H-SiCslabSi_potd
 1.0
 2000
-3=
-5.35255070433784=
+3
+5.35255070433784
 ```
 
 meaning
@@ -105,4 +106,27 @@ gnuplot -p -e "plot 'avg.dat' w l, 'avg.dat' u 1:3 w l, [0:49.108312808] 2.3868 
 ![Pot](/images/notes/2024-12-22-QE-PWscf-Workfunction/SihaveHpot.png)
 
 # 5. Python planar averging
+Use [PotDistribution](/codes/potdistribution/)
 
+```python
+# =========================== need change ========================================
+pt1 = 250        # first point dividing outside/inside slab, 0 = not dividing
+pt2 = 1800
+pt3 = len(xy)
+wid1 = 10        # averaging length outside slab
+wid2 = 138       # averaging length inside slab, evaluated by period/step
+# =========================== need change ========================================
+```
+
+- `ptx` define the location of the intermediate points, between averaging
+  - normally only three parts are need, first no need averaging (vacuum), second and third have their averaging width defined as `widx`
+- `widx` define the averaging length, unit is data point in `avg.dat`
+
+The major purpose of doing averaging is to have a **flat** interslab potential distribution, by tunning the `widx`.
+
+A reference value of `widx` can be obtain by:
+- measuring the x difference of the adjacent valleies
+- dividing the x difference by variable `step`
+- the integer of this dividing can be reference of `widx`
+
+![PotDistribution](/images/notes/2024-12-28-QE-PWscf-workfunction/SihaveHpot.png)

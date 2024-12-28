@@ -2,14 +2,14 @@
 title: "QE PWscf Energy Barrier"
 date: 2024-12-22
 excerpt: 'Quantum Espresso PWscf vacancy migration energy barrier calculation through Climbing Image Nudeged Elastic Band (CI-NEB)'
-# permalink: /posts/2024/blog1224/
-type: records #blog
+permalink: /posts/2024/blog1224/
+type: blog
 tags:
   - Ab Initio
   - Quantum Espresso
   - PWscf
   - Energy Barrier
-  - records #blog
+  - blog
 ---
 # Atomic Modeling
 See [SlabModeling](/posts/2024/blog1222/) for slab modeling
