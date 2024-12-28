@@ -1,21 +1,21 @@
 ---
 title: "Bash Notes"
 date: 2024-12-18
-excerpt: 'Coding notes for bash/sh command line in ubuntu.'
+excerpt: 'Coding notes for bash/sh command line in ubuntu'
 type: notes
 tags:
   - bash
   - notes
 ---
-```
+```sh
 #!/bin/bash
 ```
 
-```
+```sh
 chmod +x filename
 ```
 
-```
+```sh
 for var in 'abc' 'erere' 'erererss'; do
 cp ${var} file
 done
@@ -52,7 +52,7 @@ done
 -ge|Greater or equal to
 -le|Less or equal to
 
-```
+```sh
 [ -f "abc.abi" ] && echo "It is a file."
 Or
 if [ -f "abc.abi" ]; then
@@ -64,28 +64,28 @@ determine whether abc.abi is a file, if true, output "It is a file." on command 
 
 
 Applications:
-```
+```sh
 cp `find -name 'it_is_file_name'` folder/
 ```
 Copy file with name it_is_file_name into folder/
 
 
 ### functions
-```
+```sh
 function my_func {
 Shell script
 }
 ```
 
 ### Extract
-```
+```sh
 tar -zxvf ./file.tar.gz
 tar -xvjf ./file.tar.bz2
 tar -xf ./file.tar
 ```
 
 ### Compress
-```
+```bash
 tar -zcvf name-of-archive.tar.gz ./directory
 ```
 
@@ -98,12 +98,12 @@ tar -zcvf name-of-archive.tar.gz ./directory
 -c|Create an archive
 
 ### BIOS from linux
-```
+```sh
 systemctl reboot --firmware-setup
 ```
 
 ### Find ip
-```
+```sh
 ifconfig
 or 
 nmcli device show
@@ -111,7 +111,7 @@ nmcli device show
 
 ### xrdp/remote desktop
 - Boot
-```
+```sh
 who -u
 ```
 - find :0, referring to the local display
@@ -125,22 +125,34 @@ Replace 'pattern' in 'parameter' with 'string'
 
 ``b=${tmp%_*}``remove suffix starting with "_"
 
-```
+```sh
 sed -i -e 's/abc/XYZ/g' /tmp/file.txt
 ```
 which will invoke ``sed`` to do an in-place edit due to the -i option. The /g flag for sed's s command says to replace globally, i.e. do not substitute only the first occurrence on each input line. This can be called from Bash.
 
 ### Lock screen by bash
-```
+```sh
 gnome-screensaver-command -l
 ```
 
 ### RAM testing inspection
-```
+```sh
 sudo dmidecode --type memory | less
 ```
 
 ### check my pc ip at 109 by login to hpc2021.hku.hk
-```
+```sh
 last -a | grep ynl08
 ```
+
+# Gnuplot
+```sh
+gnuplot -p -e "set terminal dumb; plot '' u 1:3 w l" 
+```
+plot in terminal
+
+- -p for new window to show 
+- -e for in-line command, using ; to separate lines 
+- `plot 'filename' u 1:2 w l` (using 1:2 default) 
+- `set terminal dumb` for plotting in terminal but not new window 
+- `plot 'filename' u 1:2 w l t 'labelname'`

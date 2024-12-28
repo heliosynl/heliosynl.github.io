@@ -17,6 +17,9 @@ Band structure refers to the **electronic band structure** in solid state physic
 - Fermi velocity
 - effective mass of charge carriers
 
+# Theory
+**Updating...**
+
 The following is an example of the band structure calculation for 4H-SiC bulk crystal in 1x1x1 unit cell.
 
 Example: 4H-SiC crystal, typical wide-bandgap semiconductor, usually for high-power electronics, substrate in semiconductor industry.

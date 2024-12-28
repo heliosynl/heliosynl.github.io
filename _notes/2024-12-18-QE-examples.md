@@ -1,7 +1,7 @@
 ---
 title: 'QE PWscf Input Examples'
 date: 2024-12-18
-excerpt: 'Example input files for Quantum Espresso PWscf and some extensions.'
+excerpt: 'Example input files for Quantum Espresso PWscf and some extensions'
 type: notes
 tags:
   - Ab Initio

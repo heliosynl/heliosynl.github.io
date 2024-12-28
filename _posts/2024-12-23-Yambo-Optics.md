@@ -29,6 +29,8 @@ $$V_{scattering}(\vec r,t)=V_{ext}(\vec r,t)+V_{ind}(\vec r,t)$$
 
 $$V_{scattering}(\vec r,\omega)=\int d\vec r' \varepsilon_{nn}^{-1}(\vec r, \vec r', \omega)V_{ext}(\vec r,\omega)$$
 
+**Updating...**
+
 For Yambo calculation, a prelinminary SCF (or NSCF) calculation of the electron density distribution is needed. Below takes QE PWscf as example
 # 0. scf (or nscf)
 go to output file, go `prefix.save` folder, type `p2y` (pwscf to yambo for memorizing). Generating folder `SAVE`.
