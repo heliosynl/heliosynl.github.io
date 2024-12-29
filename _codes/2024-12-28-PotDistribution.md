@@ -20,7 +20,7 @@ from matplotlib.ticker import MultipleLocator
 import os
 import plotly.graph_objects as go
 
-fig = plt.figure(figsize=(8,4), dpi=1000)
+fig = plt.figure(figsize=(8,4), dpi=200)
 ax = fig.add_subplot(111)
 figgo = go.Figure()
 plt.style.use("default")
@@ -65,7 +65,7 @@ for line_index, line in enumerate(contents):
     z.append(float(linesplit[0]))
     xy.append(float(linesplit[1]))
 z=np.array(z)*ConvBohr2Ang          # z position
-xy=np.array(xy[::-1])*ConvRy2eV     # raw, planar average xy plane potential [::-1] for reversed
+xy=np.array(xy)*ConvRy2eV          # raw, planar average xy plane potential [::-1] for reversed
 zavg=[]                             # macroscopic potential, considered crysal periodicity
 step = step*ConvBohr2Ang
 xend = float(line.split()[0])*ConvBohr2Ang
@@ -109,8 +109,7 @@ for i in range(pt2,pt3):
     zavg.append(xy[i])  # Not averaging
 # =========================== averaging ==========================================
 
-# [::-1] for reversed
-ax.plot(z,xy,label='Plane average',color=colormap[0],linewidth=1)
+ax.plot(z,xy,label='Planar average',color=colormap[0],linewidth=1)
 ax.plot(z,zavg,label='Macroscopic average',color=colormap[1])
 
 # Work function

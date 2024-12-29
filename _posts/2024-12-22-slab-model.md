@@ -9,8 +9,8 @@ tags:
   - Modeling
   - blog
 ---
-# Atomic Modeling
-Structural optimizing **bulk model** first.
+# Atomic modeling
+Structural optimizing **bulk model** first. All the following operations are based on the relaxed **bulk model unit cell** (`vc-relax` is better, to optimize both lattice parameter and atomic coordinates).
 
 can use model converter such as [Atomsk](https://atomsk.univ-lille.fr/) to convert optimized file in [VESTA](https://jp-minerals.org/vesta/en/) format
 
@@ -19,7 +19,7 @@ atomsk model.scf.in vesta
 ```
 
 Atomsk is an open-sourced command-line modeling code. VESTA is an open-source atomic model visualization code. Open the model in .vesta format with VESTA can get
-<br/><img src='/images/notes/2024-12-22-QE-PWscf-Workfunction/4H-SiCbulk.png' width=400>
+<br/><img src='/images/notes/2024-12-22-slab-model/4H-SiCbulk.png' width=400>
 
 For example, a 4H-SiC (0001) 1x1x2 slab model is building, vacuum at the z direction.
 ## Duplicate unit cell
@@ -27,26 +27,26 @@ For example, a 4H-SiC (0001) 1x1x2 slab model is building, vacuum at the z direc
 - Transform
 - Multiply the diagonal element by the multiplier needed, 1 1 2 here
 - Notification windows not important
-<br/><img src='/images/notes/2024-12-22-QE-PWscf-Workfunction/4H-SiC112.png' width=400>
+<br/><img src='/images/notes/2024-12-22-slab-model/4H-SiC112.png' width=400>
 
 ## Include the topmost atomic layer and Remove the repetitive atoms
 - Objects-Boundary
 - x(max) and y(max) take value slightly **smaller** than 1 (e.g. 0.9)
 - z(max) takes value slightly **bigger** than 1 (e.g. 1.1)
 - confirm whether (1) additional atomic layer is added (2) extra atoms at the boundary are removed
-<br/><img src='/images/notes/2024-12-22-QE-PWscf-Workfunction/4H-SiCboundary.png' width=400>
+<br/><img src='/images/notes/2024-12-22-slab-model/4H-SiCboundary.png' width=400>
 
 ## Remove extra atoms bonded
 - Edit-Bonds
-- Boundary mode-Do not search atoms beyond the boundary
-  - usually Max. length 2.4 can see bonds (empirical)
-<br/><img src='/images/notes/2024-12-22-QE-PWscf-Workfunction/4H-SiCbonds.png' width=400>
+- Boundary mode - Do not search atoms beyond the boundary
+  - usually Max. length 2.4 can see bonds (empirical), for metallic bond 2.6
+<br/><img src='/images/notes/2024-12-22-slab-model/4H-SiCbonds.png' width=400>
 
 After these, a simplier 1x1x2 model was get.
 
 ## Convert to PWscf format
 Before output, go `View along the c axis` and check **No external** atoms exist
-<br/><img src='/images/notes/2024-12-22-QE-PWscf-Workfunction/4H-SiCcaxis.png' width=400>
+<br/><img src='/images/notes/2024-12-22-slab-model/4H-SiCcaxis.png' width=400>
 - File-Export Data
 - in `.xyz` format
 - Dont save hidden atoms
@@ -90,4 +90,51 @@ Last step, change `nat` and `ATOMIC_POSITIONS angstrom` to content in .xyz file,
   - can make the model align to the cell center
     - z-coordinates + half length of vacuum layer
 - If polar system/orientation, need to add pseudo-Hydrogen atoms. See more in [PseudoHPseudopot](/about/) and [PolarSurface](/about/)
-<br/><img src='/images/notes/2024-12-22-QE-PWscf-Workfunction/4H-SiCslab.png' width=400>
+<br/><img src='/images/notes/2024-12-22-slab-model/4H-SiCslab.png' width=400>
+
+# Model illustrating
+To format the model illustration, can follow the below step
+
+## Convert slab model from scf (relaxed) to vesta
+```sh
+atomsk model.scf.in vesta
+```
+
+same to the first step
+
+## Remove no needed widget and formating
+Open `model.scf.vesta` in VESTA first
+- Objects - Properties - General
+  - Axes - **No** show compass
+  - Atoms - Material - Specular: 0 0 0 Shininess 100
+  - Bonds - Material - Specular: 130 130 130 Shininess 80
+- Objects - Boundary
+  - increase/decrease (max)/(min) if needed, to show more atoms
+  - usually dont modify z axis (for vacuum layer at z direction)
+- Edit - Bonds
+  - For C-termination
+    - Search mode - Search atoms bonded to A1
+    - Boundary mode - Search additional atoms if A1 is included in the boundary
+    - A1 - atoms other than C (surface atoms)
+    - usually Max. length 2.4 can see bonds (empirical), for metallic bond 2.6
+- View along the a* axis
+- Rotate 90 degree
+  - let the interested surface heading **left**
+- (if need) Fit to the screen
+  - Zoom in to have better size
+
+## Output .png file with transparent background
+**Only Windows VESTA can output TRANSPARENT PNG!!**
+
+The output figure will be the same size of the VESTA window, can shrink the window before outputing, to have narrow/wide figure.
+
+- File - Export Raster Image
+  - modify file name, no .scf, .png format
+  - Scale 4 (empirical)
+  - Let the background transparent
+
+Wide figure:
+<br/><img src='/images/notes/2024-12-22-slab-model/4H-SiCslabC.png' width=800>
+
+Narrow figure (Square figure here):
+<br/><img src='/images/notes/2024-12-22-slab-model/z011-222slab.png' width=800>
