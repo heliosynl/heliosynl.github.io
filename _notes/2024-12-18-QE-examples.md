@@ -60,7 +60,7 @@ tags:
  
 &ELECTRONS
   electron_maxstep = 500
-  mixing_mode = 'local-TF' ! Plain TF local-TF
+  mixing_mode = 'plain' ! plain TF local-TF
   mixing_beta = 0.2 ! Reduce if slab model not converged
   mixing_ndim = 16 ! Increase if large of RAM
   conv_thr =  1e-11 ! can be 1e-9 for relaxation
@@ -93,6 +93,41 @@ K_POINTS automatic
 2 2 1  1 1 0
 
 ```
+
+## Pseudopotential sources
+- [PseudoDoJo](http://www.pseudo-dojo.org/)
+- [SSSP Percision](https://www.materialscloud.org/discover/sssp/table/precision)
+
+## DFT+U
+Necessity (not actually?):
+```
+nspin = 2
+starting_magnetization
+```
+
+For QE <= 7.0:
+
+```
+Lda_plus_u = .true.
+U_projection_type = 'ortho-atomic'
+Hubbard_U(1) = 1e-8
+Hubbard_U(2) = 1e-8
+```
+
+Number in the brackets refers to the ordering number of atom in ATOMIC_SPECIES
+
+For QE > 7.0:
+```
+HUBBARD ortho-atomic
+U ATOMIC_SPECIES1-3d 1e-8
+```
+
+Format:
+U [ATOMIC_SPECIES_NAME]-[ORBITAL] [U_VALUE]
+
+Only transition metal elements are required to set in (maybe?)
+
+Ortho-atomic might give more realistic result than atomic. If the ground state get stuck in a local minimum, use starting_ns_eigenvalue to help calculation reach desired/actual ground state
 
 # bands.x
 

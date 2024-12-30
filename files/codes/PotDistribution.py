@@ -34,6 +34,7 @@ ConvBohr2Ang = 0.529177
 input_file = ''                       # avg.dat produced by average.x
 nscf_file = ''                        # nscf.out file
 # =========================== need change ========================================
+
 work_dir = input_file[:len(input_file)-input_file[::-1].index('/')]
 input_file = input_file[len(input_file)-input_file[::-1].index('/'):]
 os.chdir(work_dir)

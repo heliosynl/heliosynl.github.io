@@ -104,3 +104,6 @@ figgo.add_trace(go.Scatter(x=np.linspace(0,len(e),len(e)),y=e,mode='markers'))
 figgo.add_trace(go.Scatter(x=xx,y=f(xx)))
 figgo.show()
 ```
+
+## Output
+![EnergyBarrierplot](/images/notes/2024-12-27-QE-PWscf-CINEB/EnergyBarrier.png)

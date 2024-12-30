@@ -20,11 +20,13 @@ import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 from matplotlib.ticker import MultipleLocator
 import os
-
+# =========================== need change ========================================
 input_file = ''
 work_dir = input_file[:len(input_file)-input_file[::-1].index('/')]
 input_file = input_file[len(input_file)-input_file[::-1].index('/'):]
 os.chdir(work_dir)
+# =========================== need change ========================================
+
 fdata=open(input_file,'r')
 
 with open(input_file,'r') as f:
@@ -80,11 +82,13 @@ from matplotlib.font_manager import FontProperties
 from matplotlib.ticker import MultipleLocator
 import os
 
+# =========================== need change ========================================
 input_file = ''
 work_dir = input_file[:len(input_file)-input_file[::-1].index('/')]
 input_file = input_file[len(input_file)-input_file[::-1].index('/'):]
 os.chdir(work_dir)
 fdata=open(input_file,'r')
+# =========================== need change ========================================
 
 with open(input_file,'r') as f:
 	cell = []

@@ -9,33 +9,42 @@ from matplotlib.font_manager import FontProperties
 from matplotlib.ticker import MultipleLocator
 import os
 
+# =========================== need change ========================================
 highsymmypts="""
 0.0000000000	0.0000000000	0.0000000000
 0.5000000000	0.0000000000	0.0000000000
 0.3333333333	0.3333333333	0.0000000000
 0.0000000000	0.0000000000	0.0000000000
 """.split('\n')
+# =========================== need change ========================================
+
 highsymmypts=highsymmypts[1:-1]
 for index_ele,ele in enumerate(highsymmypts):
     highsymmypts[index_ele] = highsymmypts[index_ele].split()
 highsymmypts=np.array(highsymmypts,dtype=float)
 
+# =========================== need change ========================================
 label="""
 Gamma
 M
 K
 Gamma
 """.split('\n')
+# =========================== need change ========================================
+
 label=label[1:-1]
 labelpt=[]
 for index_ele,ele in enumerate(label):
     labelpt.append(label[index_ele])
 
+# =========================== need change ========================================
 kptratio="""
 30
 20
 30
 """.split('\n')
+# =========================== need change ========================================
+
 kptratio=kptratio[1:-1]
 for index_ele,ele in enumerate(kptratio):
     kptratio[index_ele] = kptratio[index_ele]

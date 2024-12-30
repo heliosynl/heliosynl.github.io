@@ -67,33 +67,5 @@ ATOMIC_POSITION crystal_sg
 nat is supposed to accord to inequivalent atoms, which is, irreducible form of atoms in primitive cell
 Irreducible form of atoms can be obtained from VESTA by loading primitive cell file
 
-## DFT+U
-Necessity:
-```
-nspin = 2
-starting_magnetization
-```
-For QE <= 7.0:
-```
-Lda_plus_u = .true.
-U_projection_type = 'ortho-atomic'
-Hubbard_U(1) = 1e-8
-Hubbard_U(2) = 1e-8
-```
-Number in the brackets refers to the ordering number of atom in ATOMIC_SPECIES
-
-For QE > 7.0:
-```
-HUBBARD ortho-atomic
-U ATOMIC_SPECIES1-3d 1e-8
-```
-Format:
-U [ATOMIC_SPECIES_NAME]-[ORBITAL] [U_VALUE]
-
-Only transition metal elements are required to set in (maybe?)
-
-Ortho-atomic might give more realistic result than atomic
-If the ground state get stuck in a local minimum, use starting_ns_eigenvalue to help calculation reach desired/actual ground state
-
 ### If band gap exists in ground state calculation: **need test and example**
 Use ``occupation = 'fixed'``, ``tot_magnetization`` with accordance to previous SCF results, ``nbnd`` with accordance to number of Kohn-Sham states in previous SCF results. The use of ``startingpot`` and ``startingwfc`` (in ``&Electron``) is recommended to reduce CPU time and avoid from divergence

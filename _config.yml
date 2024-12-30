@@ -255,7 +255,6 @@ defaults:
       type: notes
     values:
       layout: single_notes
-      author_profile: true
       read_time: true
       toc: true
   # _pages
@@ -307,7 +306,6 @@ defaults:
       type: records
     values:
       layout: single
-      author_profile: true
   # _codes
   - scope:
       path: ""

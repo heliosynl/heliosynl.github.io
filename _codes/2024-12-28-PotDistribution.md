@@ -44,6 +44,7 @@ ConvBohr2Ang = 0.529177
 input_file = ''                       # avg.dat produced by average.x
 nscf_file = ''                        # nscf.out file
 # =========================== need change ========================================
+
 work_dir = input_file[:len(input_file)-input_file[::-1].index('/')]
 input_file = input_file[len(input_file)-input_file[::-1].index('/'):]
 os.chdir(work_dir)
@@ -140,3 +141,6 @@ figgo.add_trace(go.Scatter(x=z,y=zavg))
 figgo.add_trace(go.Scatter(x=np.linspace(z[0],z[-1],1000),y=[efermi]*1000))
 figgo.show()
 ```
+
+## Output
+![PotDistribution](/images/notes/2024-12-28-QE-PWscf-workfunction/SihaveHpot.png)
