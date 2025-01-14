@@ -61,6 +61,17 @@ OMP_NUM_THREADS=1
 ```
 in batch file (or ~/.bashrc file for local computer)
 
+### fatal error in internal_gather: message truncated, error stack:
+Similar things:
+- Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+- message...
+
+Problems relate to MPI, we call mpi out of memory, may be cause by the long address and inter-overlapping
+
+can try:
+- use fewer cores (just test in local PC first and see whether it can start calculate)
+- incresae the allocation of memory (in slurm, that is `#SBATCH --mem=600G`), useful for very large system
+
 ## Geometry
 Provided known space_group, don’t use ibrav
 ATOMIC_POSITION crystal_sg

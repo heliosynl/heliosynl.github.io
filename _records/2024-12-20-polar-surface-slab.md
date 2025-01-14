@@ -34,3 +34,6 @@ Potential distribution showed the **independency** of slab thickness (Fig.3), th
 
 ## potential field distribution and reasoning
 The potential distribution can be divided into two parts, linear part and nonlinear part. The linear part is in accordance with the previous prediction. Due to the spontaneous charge separation (charge transfer) between two polar ends, similar to the case of ZnO surfaces. This charge separation can be seen as the opposite sign of charge accumulation at each end, in valence band and conduction band, leading to the linear uniform electric field inside the slab. But this prediction is **unstable**, especially for thick slab, causing divergence: the field will not be constant anymore. Instead, only **the difference in potential** between both the sides is *preserved*. That's the reason of smaller electric field for thicker slab.
+
+# npjCM2021_Finite-size correction for slab supercell 
+if interested in O face, use 1.5 valence pseudo-H on the opposite 

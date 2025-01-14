@@ -44,7 +44,7 @@ c=299792458 #m/s
 - Relative permittivity, dielectric function$$\varepsilon(\omega)=1+\chi(\omega)$$
 - Refractive index$$n(\omega)=\sqrt{\varepsilon(\omega)}$$
   - Real part refractive index $$n=\sqrt{\frac{\sqrt{\varepsilon_r^2+\varepsilon_i^2}+\varepsilon_r}{2}}$$
-  - Imag part extinction coefficient $$\kappa=\sqrt{\frac{\sqrt{\varepsilon_r^2+\varepsilon_i^2}-\varepsilon_i}{2}}$$
+  - Imag part extinction coefficient $$\kappa=\sqrt{\frac{\sqrt{\varepsilon_r^2+\varepsilon_i^2}-\varepsilon_r}{2}}$$
   - Dielectric function in $$\varepsilon_r=n_r^2-n_i^2$$, $$\varepsilon_i=2n_rn_i$$
 - Optical absorption coefficient $$\alpha(\omega)=\frac{2\omega}{c}\kappa=\frac{2\omega}{c}n_i$$
 - Reflectivity $$R=\frac{(1-n)^2+\kappa^2}{(1+n)^2+\kappa^2}=\frac{(1-n)^2+n_i^2}{(1+n)^2+n_i^2}$$

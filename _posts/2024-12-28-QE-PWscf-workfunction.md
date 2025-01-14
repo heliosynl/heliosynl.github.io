@@ -103,7 +103,7 @@ can also find Fermi level then plot with, found in `nscf.out` by `grep Fermi nsc
 gnuplot -p -e "plot 'avg.dat' w l, 'avg.dat' u 1:3 w l, [0:49.108312808] 2.3868 w l t 'Fermi level'"
 ```
 
-![Pot](/images/notes/2024-12-22-QE-PWscf-Workfunction/SihaveHpot.png)
+![Pot](/images/notes/2024-12-28-QE-PWscf-workfunction/SihaveHpot.png)
 
 # 5. Python planar averging
 Use [PotDistribution](/codes/potdistribution/)

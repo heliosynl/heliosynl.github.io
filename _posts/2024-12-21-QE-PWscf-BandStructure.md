@@ -157,9 +157,21 @@ generate several gnuplot files, splited by high-symmetry points
 
 # 6. gnuplot
 ```sh
-gnuplot -p -e "plot 'gnuplot.1.1' w l, 'gnuplot.2.1' w l, 'gnuplot.3.1' w l, [0:1.5773] 10.5433 w l t 'Fermi level'"
+gnuplot -p -e "plot 'gnuplot.1.1' w l, 'gnuplot.2.1' w l, 'gnuplot.3.1' w l, [0:1.5773] 3.8937 w l t 'Fermi level'"
 ```
 
 ![BulkBand](/images/notes/2024-12-21-QE-PWscf-BandStructure/4H-SiCbulk.png)
 
 Obviously an indirect band gap is found, between Gamma point as VBM and K point as CBM.
+
+**BEAWARE**: the use of `plotbands.x` may introduce some *numerical* error in post-processing, use
+```sh
+gnuplot -p -e "plot 'prefix_bands.gnu' w l, [0:1.5773] 3.8937 w l t 'Fermi level'"
+```
+
+is better, and then split the band by k point path by yourself (can see `plotbands.x` 's output to know the x coordinate of each high sym. point).
+
+# 7. Python Plotting
+use [Bandstructure](/codes/bandstructure/)
+
+![Bandstructure](/images/notes/2024-12-21-QE-PWscf-BandStructure/Cband.png)

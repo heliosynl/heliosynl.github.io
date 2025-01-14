@@ -56,7 +56,7 @@ for line_index, line in enumerate(contents):
     z.append(float(linesplit[0]))
     xy.append(float(linesplit[1]))
 z=np.array(z)*ConvBohr2Ang          # z position
-xy=np.array(xy)*ConvRy2eV          # raw, planar average xy plane potential [::-1] for reversed
+xy=np.array(xy)*ConvRy2eV           # raw, planar average xy plane potential [::-1] for reversed
 zavg=[]                             # macroscopic potential, considered crysal periodicity
 step = step*ConvBohr2Ang
 xend = float(line.split()[0])*ConvBohr2Ang
