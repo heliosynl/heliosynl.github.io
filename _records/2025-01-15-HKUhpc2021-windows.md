@@ -133,6 +133,7 @@ only need to know the column `ST`, `NODES`, `CPUS`, `TIME_LIMIT`, `TIME_LEFT`
 
 - `sbatch <run.sh>`
   - job submission, see below the format of `run.sh` file
+
 ```sh
 #!/bin/bash
 #SBATCH --job-name=example                # 1. Job name, only display the first 8 characters
