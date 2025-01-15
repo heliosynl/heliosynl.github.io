@@ -145,6 +145,19 @@ sudo dmidecode --type memory | less
 last -a | grep ynl08
 ```
 
+### soft link
+```sh
+ln -s {source-filename} {symbolic-filename}
+```
+
+for example, I have a directory at `/home/heliosynl/test` and I want it a new name is `/data/newname`, I can do
+
+```sh
+ln -s /home/heliosynl/test /data/newname
+```
+
+it will create a softlink name `newname` at `/data/` directory, pointing to `/home/heliosynl/test`
+
 # Gnuplot
 ```sh
 gnuplot -p -e "set terminal dumb; plot '' u 1:3 w l" 
