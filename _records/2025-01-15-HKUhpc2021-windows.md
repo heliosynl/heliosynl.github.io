@@ -190,6 +190,8 @@ comsol batch -nn 1 -np 64 -inputfile input.mph -outputfile out.mph
 date
 ```
 
+[Download file here](/files/codes/run.sh)
+
 Don't try to change other thing except the below:
 - Job name, can modify as `--job-name=DFT1`, here is 4 characters, so can display. Otherwise, only the first 8 characters will display if too long, for exakmple 'ultrasound' only display 'ultrasou'
 - email address, the system will send you email when the job begin, end, fail
