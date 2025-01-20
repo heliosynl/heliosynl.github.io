@@ -104,6 +104,7 @@ drwxr-xr-x 2 ynl08 student    0 Jan 11 18:34 Jan11_100hrs
 
 |no need|no need|user|no need|file size|last modified date (in month|day|time)|file name|
 |-------|-------|----|-------|---------|----------------------------|---|-----|---------|
+||||||||||
 
 - `mkdir <new directory name>`
   - make new directory (folder)
