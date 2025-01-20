@@ -153,7 +153,7 @@ date
 export OMP_NUM_THREADS=1
 module load comsol/6.1
 
-comsol batch -nn 1 -np 64 -inputfile input.mph -outputfile out.mph
+comsol batch -np 64 -inputfile input.mph -outputfile out.mph
 # print the end time
 date
 ```
