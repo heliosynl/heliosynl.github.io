@@ -2,7 +2,7 @@
 title: 'HKU hpc2021 connection in Windows'
 date: 2025-01-15
 excerpt: 'Tutorial for HKU hpc2021 connection in Windows system, basic in Linux and sshfs file manager'
-# permalink: /posts/2012/08/blog-post-4/
+permalink: /HKUhpc2021windows/
 type: records # blog
 tags:
   - Tutorial
@@ -153,8 +153,9 @@ only need to know the column `ST`, `NODES`, `CPUS`, `TIME_LIMIT`, `TIME_LEFT`
 date
 export OMP_NUM_THREADS=1
 module load comsol/6.1
+export COMSOLTMP=~/group/tmpcomsol
 
-comsol batch -np 64 -inputfile input.mph -outputfile out.mph
+comsol batch -recoverydir $COMSOLTMP -np 64 -inputfile input.mph -outputfile out.mph
 # print the end time
 date
 ```
@@ -185,8 +186,9 @@ the last is the job id of the job
 date
 export OMP_NUM_THREADS=1
 module load comsol/6.1
+export COMSOLTMP=~/group/tmpcomsol
 
-comsol batch -np 64 -inputfile input.mph -outputfile out.mph
+comsol batch -recoverydir $COMSOLTMP -np 64 -inputfile input.mph -outputfile out.mph
 # print the end time
 date
 ```

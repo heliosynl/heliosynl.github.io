@@ -21,7 +21,8 @@ export OMP_NUM_THREADS=1
 # mpirun pw.x < >& 
 
 module load comsol/6.1
+export COMSOLTMP=~/group/tmpcomsol
 
-comsol batch -np 64 -inputfile input.mph -outputfile out.mph
+comsol batch -recoverydir $COMSOLTMP -np 64 -inputfile input.mph -outputfile out.mph
 # print the end time
 date
