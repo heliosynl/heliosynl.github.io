@@ -2,9 +2,9 @@
 title: "STG workshop presentation abstract"
 date: 2025-02-04
 excerpt: 'STG workshop abstract'
-type: records
+type: record
 tags:
-  - records
+  - record
 ---
 # Title
 Nanoscale Optoelectronic Materials through Theoretical Modeling

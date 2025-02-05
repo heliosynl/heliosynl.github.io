@@ -3,10 +3,10 @@ title: 'HKU hpc2021 connection in Windows'
 date: 2025-01-15
 excerpt: 'Tutorial for HKU hpc2021 connection in Windows system, basic in Linux and sshfs file manager'
 permalink: /HKUhpc2021windows/
-type: records # blog
+type: record # blog
 tags:
   - Tutorial
-  - records # blog
+  - record # blog
 ---
 HPC: high performance computer, HPC service provided by HKU is basically [hpc2021](https://hpc.hku.hk/hpc/hpc2021/)
 
@@ -202,7 +202,6 @@ Don't try to change other thing except the below:
 - nodes, 1 is ok, larger makes longer queuing time
 - memory, same as RAM, for comsol 200G is ok
 - time, the job will end sharply at this time after begining, whatever the job is finished or not. No need to too long, can try from 0-12:00:00
-- make sure the number after `-nn` is the same as `--nodes`
 - make sure the number after `-np` is the same as `--ntasks`
 - `input.mph` need to change the input file you created in local computer, at the same directory
 - `out.mph` will be the output file of the calculation

@@ -3,12 +3,12 @@ title: "Polar surface slab model"
 date: 2024-12-20
 excerpt: 'Quantum Espresso PWscf polar slab model'
 # permalink: /posts/2024/blog1224/
-type: records #blog
+type: record #blog
 tags:
   - Ab Initio
   - Quantum Espresso
   - PWscf
-  - records #blog
+  - record #blog
 ---
 
 # NJP2010_A comparative DFT study of electronic properties
