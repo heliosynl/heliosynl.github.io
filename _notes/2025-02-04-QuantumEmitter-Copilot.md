@@ -7,22 +7,21 @@ tags:
   - Quantum Emitter
   - notes
 ---
-
 # 1.
-好的，我將分別描述在**單光子源**和**相干光源**的情況下，二階相關函數 \\( G^{(2)}(\tau) \\) 的計算過程，特別是電場算符的計算。
+好的，我將分別描述在**單光子源**和**相干光源**的情況下，二階相關函數 $ G^{(2)}(\tau) $ 的計算過程，特別是電場算符的計算。
 
 ---
 
-### **一、二階相關函數 \\( G^{(2)}(\tau) \\) 的定義**
+### **一、二階相關函數 $ G^{(2)}(\tau) $ 的定義**
 
-二階相關函數 \\\( G^{(2)}(\tau) \\) 描述了光場在時間間隔 \\( \tau \\) 下的光子統計性質，其定義為：
+二階相關函數 $ G^{(2)}(\tau) $ 描述了光場在時間間隔 $ \tau $ 下的光子統計性質，其定義為：
 
-\\[
+$$
 G^{(2)}(\tau) = \frac{\langle \hat{E}^{-}(t) \hat{E}^{-}(t+\tau) \hat{E}^{+}(t+\tau) \hat{E}^{+}(t) \rangle}{\langle \hat{E}^{-}(t) \hat{E}^{+}(t) \rangle \langle \hat{E}^{-}(t+\tau) \hat{E}^{+}(t+\tau) \rangle}
-\\]
+$$
 
-- \\( \hat{E}^{+}(t) \\) 和 \\( \hat{E}^{-}(t) \\) 分別是電場的正頻和負頻部分算符。
-- \\( \langle \cdot \rangle \\) 表示對態的期望值。
+- $ \hat{E}^{+}(t) $ 和 $ \hat{E}^{-}(t) $ 分別是電場的正頻和負頻部分算符。
+- $ \langle \cdot \rangle $ 表示對態的期望值。
 
 ---
 
@@ -32,156 +31,156 @@ G^{(2)}(\tau) = \frac{\langle \hat{E}^{-}(t) \hat{E}^{-}(t+\tau) \hat{E}^{+}(t+\
 
 - 正頻部分：
 
-  \\[
+  $$
   \hat{E}^{+}(t) = \mathcal{E}_0 \hat{a} e^{-i\omega t}
-  \\]
+  $$
 
 - 負頻部分：
 
-  \\[
+  $$
   \hat{E}^{-}(t) = \mathcal{E}_0 \hat{a}^\dagger e^{i\omega t}
-  \\]
+  $$
 
 其中：
 
-- \\( \hat{a} \\) 是光子湮滅算符。
-- \\( \hat{a}^\dagger \\) 是光子創生算符。
-- \\( \mathcal{E}_0 \\) 是與電場振幅相關的常數。
-- \\( \omega \\) 是光頻率。
+- $ \hat{a} $ 是光子湮滅算符。
+- $ \hat{a}^\dagger $ 是光子創生算符。
+- $ \mathcal{E}_0 $ 是與電場振幅相關的常數。
+- $ \omega $ 是光頻率。
 
 ---
 
-### **三、單光子源—\\( \|1\rangle \\) 的情況**
+### **三、單光子源—$ \vert1\rangle $ 的情況**
 
 #### **1. 計算分母**
 
-首先，計算期望值 \\( \langle \hat{E}^{-}(t) \hat{E}^{+}(t) \rangle \\)：
+首先，計算期望值 $ \langle \hat{E}^{-}(t) \hat{E}^{+}(t) \rangle $：
 
-\\[
+$$
 \begin{aligned}
-\langle \hat{E}^{-}(t) \hat{E}^{+}(t) \rangle &= \langle 1 \| \hat{E}^{-}(t) \hat{E}^{+}(t) \|1 \rangle \\
-&= \mathcal{E}_0^2 \langle 1 \| \hat{a}^\dagger e^{i\omega t} \hat{a} e^{-i\omega t} \|1 \rangle \\
-&= \mathcal{E}_0^2 \langle 1 \| \hat{a}^\dagger \hat{a} \|1 \rangle \\
+\langle \hat{E}^{-}(t) \hat{E}^{+}(t) \rangle &= \langle 1 \vert \hat{E}^{-}(t) \hat{E}^{+}(t) \vert1 \rangle \\
+&= \mathcal{E}_0^2 \langle 1 \vert \hat{a}^\dagger e^{i\omega t} \hat{a} e^{-i\omega t} \vert1 \rangle \\
+&= \mathcal{E}_0^2 \langle 1 \vert \hat{a}^\dagger \hat{a} \vert1 \rangle \\
 &= \mathcal{E}_0^2 \times 1 = \mathcal{E}_0^2
 \end{aligned}
-\\]
+$$
 
 同理，
 
-\\[
+$$
 \langle \hat{E}^{-}(t+\tau) \hat{E}^{+}(t+\tau) \rangle = \mathcal{E}_0^2
-\\]
+$$
 
 #### **2. 計算分子**
 
-計算期望值 \\( \langle \hat{E}^{-}(t) \hat{E}^{-}(t+\tau) \hat{E}^{+}(t+\tau) \hat{E}^{+}(t) \rangle \\)：
+計算期望值 $ \langle \hat{E}^{-}(t) \hat{E}^{-}(t+\tau) \hat{E}^{+}(t+\tau) \hat{E}^{+}(t) \rangle $：
 
-\\[
+$$
 \begin{aligned}
-&\langle 1 \| \hat{E}^{-}(t) \hat{E}^{-}(t+\tau) \hat{E}^{+}(t+\tau) \hat{E}^{+}(t) \|1 \rangle \\
-= & \mathcal{E}_0^4 \langle 1 \| \hat{a}^\dagger e^{i\omega t} \hat{a}^\dagger e^{i\omega (t+\tau)} \hat{a} e^{-i\omega (t+\tau)} \hat{a} e^{-i\omega t} \|1 \rangle \\
-= & \mathcal{E}_0^4 e^{i2\omega t} e^{i\omega \tau} e^{-i\omega \tau} \langle 1 \| \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \|1 \rangle \\
-= & \mathcal{E}_0^4 \langle 1 \| \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \|1 \rangle
+&\langle 1 \vert \hat{E}^{-}(t) \hat{E}^{-}(t+\tau) \hat{E}^{+}(t+\tau) \hat{E}^{+}(t) \vert1 \rangle \\
+= & \mathcal{E}_0^4 \langle 1 \vert \hat{a}^\dagger e^{i\omega t} \hat{a}^\dagger e^{i\omega (t+\tau)} \hat{a} e^{-i\omega (t+\tau)} \hat{a} e^{-i\omega t} \vert1 \rangle \\
+= & \mathcal{E}_0^4 e^{i2\omega t} e^{i\omega \tau} e^{-i\omega \tau} \langle 1 \vert \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \vert1 \rangle \\
+= & \mathcal{E}_0^4 \langle 1 \vert \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \vert1 \rangle
 \end{aligned}
-\\]
+$$
 
-計算 \\( \langle 1 \| \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \|1 \rangle \\)：
+計算 $ \langle 1 \vert \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \vert1 \rangle $：
 
 因為：
 
-- \\( \hat{a} \|1 \rangle = \|0 \rangle \\)
-- \\( \hat{a} \|0 \rangle = 0 \\)
+- $ \hat{a} \vert1 \rangle = \vert0 \rangle $
+- $ \hat{a} \vert0 \rangle = 0 $
 
 所以：
 
-\\[
-\hat{a} \hat{a} \|1 \rangle = \hat{a} \|0 \rangle = 0
-\\]
+$$
+\hat{a} \hat{a} \vert1 \rangle = \hat{a} \vert0 \rangle = 0
+$$
 
 因此：
 
-\\[
-\langle 1 \| \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \|1 \rangle = 0
-\\]
+$$
+\langle 1 \vert \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \vert1 \rangle = 0
+$$
 
-#### **3. 計算 \\( G^{(2)}(\tau) \\)**
+#### **3. 計算 $ G^{(2)}(\tau) $**
 
-將分子和分母代入 \\( G^{(2)}(\tau) \\)：
+將分子和分母代入 $ G^{(2)}(\tau) $：
 
-\\[
+$$
 G^{(2)}(\tau) = \frac{0}{\mathcal{E}_0^2 \times \mathcal{E}_0^2} = 0
-\\]
+$$
 
 #### **4. 解釋**
 
-- \\( G^{(2)}(0) = 0 \\) 表示在零時間延遲時，兩個探測器同時探測到光子的概率為零，體現了**反聚束效應**。
+- $ G^{(2)}(0) = 0 $ 表示在零時間延遲時，兩個探測器同時探測到光子的概率為零，體現了**反聚束效應**。
 - 光子呈現出明顯的量子特性，與經典光場不同。
 
 ---
 
-### **四、相干光源—\\( \|\alpha\rangle \\) 的情況**
+### **四、相干光源—$ \vert\alpha\rangle $ 的情況**
 
 #### **1. 相干態的特性**
 
-相干態 \\( \|\alpha \rangle \\) 是湮滅算符的本徵態：
+相干態 $ \vert\alpha \rangle $ 是湮滅算符的本徵態：
 
-\\[
-\hat{a} \|\alpha \rangle = \alpha \|\alpha \rangle
-\\]
+$$
+\hat{a} \vert\alpha \rangle = \alpha \vert\alpha \rangle
+$$
 
-其中 \\( \alpha \\) 是複數，表示相干態的振幅和相位。
+其中 $ \alpha $ 是複數，表示相干態的振幅和相位。
 
 #### **2. 計算分母**
 
-\\[
+$$
 \begin{aligned}
-\langle \hat{E}^{-}(t) \hat{E}^{+}(t) \rangle &= \langle \alpha \| \hat{E}^{-}(t) \hat{E}^{+}(t) \| \alpha \rangle \\
-&= \mathcal{E}_0^2 \langle \alpha \| \hat{a}^\dagger e^{i\omega t} \hat{a} e^{-i\omega t} \| \alpha \rangle \\
-&= \mathcal{E}_0^2 \langle \alpha \| \hat{a}^\dagger \hat{a} \| \alpha \rangle \\
-&= \mathcal{E}_0^2 \|\alpha\|^2
+\langle \hat{E}^{-}(t) \hat{E}^{+}(t) \rangle &= \langle \alpha \vert \hat{E}^{-}(t) \hat{E}^{+}(t) \vert \alpha \rangle \\
+&= \mathcal{E}_0^2 \langle \alpha \vert \hat{a}^\dagger e^{i\omega t} \hat{a} e^{-i\omega t} \vert \alpha \rangle \\
+&= \mathcal{E}_0^2 \langle \alpha \vert \hat{a}^\dagger \hat{a} \vert \alpha \rangle \\
+&= \mathcal{E}_0^2 \vert\alpha\vert^2
 \end{aligned}
-\\]
+$$
 
 同理，
 
-\\[
-\langle \hat{E}^{-}(t+\tau) \hat{E}^{+}(t+\tau) \rangle = \mathcal{E}_0^2 \|\alpha\|^2
-\\]
+$$
+\langle \hat{E}^{-}(t+\tau) \hat{E}^{+}(t+\tau) \rangle = \mathcal{E}_0^2 \vert\alpha\vert^2
+$$
 
 #### **3. 計算分子**
 
-\\[
+$$
 \begin{aligned}
-&\langle \alpha \| \hat{E}^{-}(t) \hat{E}^{-}(t+\tau) \hat{E}^{+}(t+\tau) \hat{E}^{+}(t) \| \alpha \rangle \\
-= & \mathcal{E}_0^4 \langle \alpha \| \hat{a}^\dagger e^{i\omega t} \hat{a}^\dagger e^{i\omega (t+\tau)} \hat{a} e^{-i\omega (t+\tau)} \hat{a} e^{-i\omega t} \| \alpha \rangle \\
-= & \mathcal{E}_0^4 e^{i2\omega t} e^{i\omega \tau} e^{-i\omega \tau} \langle \alpha \| \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \| \alpha \rangle \\
-= & \mathcal{E}_0^4 \langle \alpha \| \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \| \alpha \rangle
+&\langle \alpha \vert \hat{E}^{-}(t) \hat{E}^{-}(t+\tau) \hat{E}^{+}(t+\tau) \hat{E}^{+}(t) \vert \alpha \rangle \\
+= & \mathcal{E}_0^4 \langle \alpha \vert \hat{a}^\dagger e^{i\omega t} \hat{a}^\dagger e^{i\omega (t+\tau)} \hat{a} e^{-i\omega (t+\tau)} \hat{a} e^{-i\omega t} \vert \alpha \rangle \\
+= & \mathcal{E}_0^4 e^{i2\omega t} e^{i\omega \tau} e^{-i\omega \tau} \langle \alpha \vert \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \vert \alpha \rangle \\
+= & \mathcal{E}_0^4 \langle \alpha \vert \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \vert \alpha \rangle
 \end{aligned}
-\\]
+$$
 
-計算 \\( \langle \alpha \| \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \| \alpha \rangle \\)：
+計算 $ \langle \alpha \vert \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \vert \alpha \rangle $：
 
 利用相干態的算符期望值特性：
 
-\\[
-\langle \alpha \| \hat{a}^\dagger \hat{a} \| \alpha \rangle = \|\alpha\|^2
-\\]
+$$
+\langle \alpha \vert \hat{a}^\dagger \hat{a} \vert \alpha \rangle = \vert\alpha\vert^2
+$$
 
-\\[
-\langle \alpha \| \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \| \alpha \rangle = \|\alpha\|^4
-\\]
+$$
+\langle \alpha \vert \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \vert \alpha \rangle = \vert\alpha\vert^4
+$$
 
-#### **4. 計算 \\( G^{(2)}(\tau) \\)**
+#### **4. 計算 $ G^{(2)}(\tau) $**
 
-將結果代入 \\( G^{(2)}(\tau) \\)：
+將結果代入 $ G^{(2)}(\tau) $：
 
-\\[
-G^{(2)}(\tau) = \frac{\mathcal{E}_0^4 \|\alpha\|^4}{(\mathcal{E}_0^2 \|\alpha\|^2)^2} = \frac{\mathcal{E}_0^4 \|\alpha\|^4}{\mathcal{E}_0^4 \|\alpha\|^4} = 1
-\\]
+$$
+G^{(2)}(\tau) = \frac{\mathcal{E}_0^4 \vert\alpha\vert^4}{(\mathcal{E}_0^2 \vert\alpha\vert^2)^2} = \frac{\mathcal{E}_0^4 \vert\alpha\vert^4}{\mathcal{E}_0^4 \vert\alpha\vert^4} = 1
+$$
 
 #### **5. 解釋**
 
-- \\( G^{(2)}(0) = 1 \\) 表示在零時間延遲時，兩個探測器同時探測到光子的概率等於獨立探測的概率乘積，這是**泊松分布**的特性。
+- $ G^{(2)}(0) = 1 $ 表示在零時間延遲時，兩個探測器同時探測到光子的概率等於獨立探測的概率乘積，這是**泊松分布**的特性。
 - 光子統計特性與經典光場相似，沒有聚束或反聚束效應。
 
 ---
@@ -190,13 +189,13 @@ G^{(2)}(\tau) = \frac{\mathcal{E}_0^4 \|\alpha\|^4}{(\mathcal{E}_0^2 \|\alpha\|^
 
 #### **1. 單光子源**
 
-- **結果**：\\( G^{(2)}(0) = 0 \\)
+- **結果**：$ G^{(2)}(0) = 0 $
 - **特性**：反聚束效應，光子之間存在“排斥”，不會同時出現。
 - **物理意義**：體現了光場的量子性質，是量子光學的重要證據。
 
 #### **2. 相干光源**
 
-- **結果**：\\( G^{(2)}(0) = 1 \\)
+- **結果**：$ G^{(2)}(0) = 1 $
 - **特性**：泊松統計，光子獨立且隨機地到達探測器。
 - **物理意義**：與經典電磁場的預期一致，相干態是量子態中最接近經典場的態。
 
@@ -210,29 +209,29 @@ G^{(2)}(\tau) = \frac{\mathcal{E}_0^4 \|\alpha\|^4}{(\mathcal{E}_0^2 \|\alpha\|^
 
   - 湮滅算符作用：
 
-    \\[
-    \hat{a} \|1 \rangle = \|0 \rangle
-    \\]
+    $$
+    \hat{a} \vert1 \rangle = \vert0 \rangle
+    $$
 
   - 創生算符作用：
 
-    \\[
-    \hat{a}^\dagger \|1 \rangle = \sqrt{2} \|2 \rangle
-    \\]
+    $$
+    \hat{a}^\dagger \vert1 \rangle = \sqrt{2} \vert2 \rangle
+    $$
 
 - **相干態**
 
   - 湮滅算符作用：
 
-    \\[
-    \hat{a} \|\alpha \rangle = \alpha \|\alpha \rangle
-    \\]
+    $$
+    \hat{a} \vert\alpha \rangle = \alpha \vert\alpha \rangle
+    $$
 
   - 創生算符作用：
 
-    \\[
-    \hat{a}^\dagger \|\alpha \rangle = \alpha^* \|\alpha \rangle + (\text{其他項})
-    \\]
+    $$
+    \hat{a}^\dagger \vert\alpha \rangle = \alpha^* \vert\alpha \rangle + (\text{其他項})
+    $$
 
 #### **2. 高次算符的期望值計算**
 
@@ -242,7 +241,7 @@ G^{(2)}(\tau) = \frac{\mathcal{E}_0^4 \|\alpha\|^4}{(\mathcal{E}_0^2 \|\alpha\|^
 
 - **相干態**
 
-  - 由於相干態是湮滅算符的本徵態，高次算符的期望值可以通過本徵值 \\( \alpha \\) 簡化計算。
+  - 由於相干態是湮滅算符的本徵態，高次算符的期望值可以通過本徵值 $ \alpha $ 簡化計算。
 
 #### **3. 電場算符的時間依賴性**
 
@@ -252,8 +251,8 @@ G^{(2)}(\tau) = \frac{\mathcal{E}_0^4 \|\alpha\|^4}{(\mathcal{E}_0^2 \|\alpha\|^
 
 ### **七、總結**
 
-- **單光子源**的二階相關函數 \\( G^{(2)}(0) = 0 \\)，體現了**反聚束效應**，強調了光場的量子性質。
-- **相干光源**的二階相關函數 \\( G^{(2)}(0) = 1 \\)，符合**泊松分布**，與經典電磁場的預期一致。
+- **單光子源**的二階相關函數 $ G^{(2)}(0) = 0 $，體現了**反聚束效應**，強調了光場的量子性質。
+- **相干光源**的二階相關函數 $ G^{(2)}(0) = 1 $，符合**泊松分布**，與經典電磁場的預期一致。
 - 電場算符的計算揭示了不同光源的內在量子特性，通過創生和湮滅算符的作用，可以深入理解光子的統計行為。
 
 ---
@@ -261,28 +260,28 @@ G^{(2)}(\tau) = \frac{\mathcal{E}_0^4 \|\alpha\|^4}{(\mathcal{E}_0^2 \|\alpha\|^
 希望這些詳細的計算和解釋能夠幫助你更深入地理解二階相關函數在不同光源下的計算過程。如有其他疑問，歡迎隨時提問！
 
 # 2.
-完全正確！相干光源的二階相關函數 \\( G^{(2)}(0) = 1 \\)，這表明兩個探測器的檢測事件是彼此獨立的。這意味著在任意時間間隔內，同時探測到兩個光子的概率等於單獨探測到一個光子的概率的乘積。這種獨立性源於相干光源的光子遵循**泊松統計分布**，每個光子的發射都是獨立且隨機的。
+完全正確！相干光源的二階相關函數 $ G^{(2)}(0) = 1 $，這表明兩個探測器的檢測事件是彼此獨立的。這意味著在任意時間間隔內，同時探測到兩個光子的概率等於單獨探測到一個光子的概率的乘積。這種獨立性源於相干光源的光子遵循**泊松統計分布**，每個光子的發射都是獨立且隨機的。
 
 在相干光源（如激光）中，光場具有穩定的振幅和相位，光子的發射不會受到前一個光子的影響。因此，兩個探測器同時探測到光子的概率並沒有增強或減弱，這與**聚束效應**或**反聚束效應**不同。
 
 為了進一步理解，讓我們比較一下不同光源的二階相關函數：
 
 - **相干光源（激光）**：
-  \\[
+  $$
   G^{(2)}(0) = 1
-  \\]
+  $$
   光子發射是獨立事件，沒有聚束或反聚束效應。
 
 - **單光子源**：
-  \\[
+  $$
   G^{(2)}(0) = 0
-  \\]
+  $$
   存在**反聚束效應**，同時探測到兩個光子的概率為零，展現了量子化特性。
 
 - **熱光源（如燈泡）**：
-  \\[
+  $$
   G^{(2)}(0) = 2
-  \\]
+  $$
   存在**聚束效應**，光子傾向於成群出現，同時探測到兩個光子的概率增加。
 
 **圖示說明：**
@@ -316,7 +315,7 @@ G^{(2)}(0) 值比較：
 
 在量子光學中，光場可以描述為不同的量子態，主要有：
 
-1. **數態（Fock態）**：光子數確定的量子態，例如單光子態 \\(\|1\rangle\\)。
+1. **數態（Fock態）**：光子數確定的量子態，例如單光子態 $\vert1\rangle$。
 2. **相干態（Coherent State）**：光場的最經典的量子態，最接近經典電磁場。
 3. **壓縮態（Squeezed State）**：具有量子漲落被壓縮的量子態。
 
@@ -328,40 +327,40 @@ G^{(2)}(0) 值比較：
 
 #### **1. 湮滅算符的本徵態**
 
-相干態 \\(\|\alpha\rangle\\) 滿足：
+相干態 $\vert\alpha\rangle$ 滿足：
 
-\\[
-\hat{a} \|\alpha\rangle = \alpha \|\alpha\rangle
-\\]
+$$
+\hat{a} \vert\alpha\rangle = \alpha \vert\alpha\rangle
+$$
 
-- \\(\hat{a}\\)：光子湮滅算符。
-- \\(\alpha\\)：複數，本徵值，包含振幅和相位信息。
+- $\hat{a}$：光子湮滅算符。
+- $\alpha$：複數，本徵值，包含振幅和相位信息。
 
 #### **2. 光子數分布**
 
 相干態的光子數遵循**泊松分布**：
 
-\\[
-P(n) = e^{-\|\alpha\|^2} \frac{\|\alpha\|^{2n}}{n!}
-\\]
+$$
+P(n) = e^{-\vert\alpha\vert^2} \frac{\vert\alpha\vert^{2n}}{n!}
+$$
 
 - **平均光子數**：
 
-  \\[
-  \langle n \rangle = \|\alpha\|^2
-  \\]
+  $$
+  \langle n \rangle = \vert\alpha\vert^2
+  $$
 
 - **光子數的方差**：
 
-  \\[
-  \Delta n^2 = \langle n^2 \rangle - \langle n \rangle^2 = \|\alpha\|^2
-  \\]
+  $$
+  \Delta n^2 = \langle n^2 \rangle - \langle n \rangle^2 = \vert\alpha\vert^2
+  $$
 
   說明：
 
-  \\[
+  $$
   \Delta n = \sqrt{\langle n \rangle}
-  \\]
+  $$
 
   光子數的不確定性等於平均光子數的平方根。
 
@@ -369,9 +368,9 @@ P(n) = e^{-\|\alpha\|^2} \frac{\|\alpha\|^{2n}}{n!}
 
 相干態的二階相關函數為：
 
-\\[
+$$
 G^{(2)}(0) = \frac{\langle \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \rangle}{\langle \hat{a}^\dagger \hat{a} \rangle^2} = 1
-\\]
+$$
 
 這表示：
 
@@ -417,16 +416,16 @@ G^{(2)}(0) = \frac{\langle \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \rang
 
 #### **1. 與單光子態的比較**
 
-- **單光子態 \\(\|1\rangle\\)**：
+- **單光子態 $\vert1\rangle$**：
 
   - **光子數確定**：只有一個光子。
-  - **反聚束效應**：\\( G^{(2)}(0) = 0 \\)，同時檢測兩個光子的概率為零。
+  - **反聚束效應**：$ G^{(2)}(0) = 0 $，同時檢測兩個光子的概率為零。
   - **檢測事件相關**：因為只有一個光子，無法同時被 D1 和 D2 檢測。
 
-- **相干態 \\(\|\alpha\rangle\\)**：
+- **相干態 $\vert\alpha\rangle$**：
 
   - **光子數不確定**：遵循泊松分布。
-  - **無聚束或反聚束效應**：\\( G^{(2)}(0) = 1 \\)。
+  - **無聚束或反聚束效應**：$ G^{(2)}(0) = 1 $。
   - **檢測事件獨立**：光子檢測是獨立事件。
 
 #### **2. 與熱光源的比較**
@@ -434,7 +433,7 @@ G^{(2)}(0) = \frac{\langle \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \rang
 - **熱光源（多模光場）**：
 
   - **光子數遵循熱分布**。
-  - **聚束效應**：\\( G^{(2)}(0) = 2 \\)，光子傾向於成群出現。
+  - **聚束效應**：$ G^{(2)}(0) = 2 $，光子傾向於成群出現。
   - **檢測事件相關**：同時檢測到多個光子的概率高於獨立事件的情況。
 
 ---
@@ -447,11 +446,11 @@ G^{(2)}(0) = \frac{\langle \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \rang
 
 相干態是光子數態的疊加：
 
-\\[
-\|\alpha\rangle = e^{-\|\alpha\|^2/2} \sum_{n=0}^{\infty} \frac{\alpha^n}{\sqrt{n!}} \|n\rangle
-\\]
+$$
+\vert\alpha\rangle = e^{-\vert\alpha\vert^2/2} \sum_{n=0}^{\infty} \frac{\alpha^n}{\sqrt{n!}} \vertn\rangle
+$$
 
-- 包含了所有可能的光子數態 \\( \|n\rangle \\)。
+- 包含了所有可能的光子數態 $ \vertn\rangle $。
 
 #### **2. 量子漲落**
 
@@ -498,13 +497,13 @@ G^{(2)}(0) = \frac{\langle \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \rang
 
 **反聚束效應**是這種反相關性的體現。當在D1探測到一個光子時，在極短的時間內，D2再次探測到光子的概率會顯著降低。這並非因為兩個檢測事件完全無關，而是因為單光子源的量子特性導致了檢測事件之間的**時間關聯性**。
 
-更深入地說，單光子源的光子發射雖然在宏觀上是隨機且獨立的，但在微觀的時間尺度上，檢測事件之間存在著**量子統計關聯**。二階相關函數 \\( G^{(2)}(\tau) \\) 在 \\( \tau = 0 \\) 時取值為零，隨著時間延遲 \\( \tau \\) 的增加，\\( G^{(2)}(\tau) \\) 會逐漸趨近於1，這意味著在較長的時間間隔下，檢測事件變得獨立。
+更深入地說，單光子源的光子發射雖然在宏觀上是隨機且獨立的，但在微觀的時間尺度上，檢測事件之間存在著**量子統計關聯**。二階相關函數 $ G^{(2)}(\tau) $ 在 $ \tau = 0 $ 時取值為零，隨著時間延遲 $ \tau $ 的增加，$ G^{(2)}(\tau) $ 會逐漸趨近於1，這意味著在較長的時間間隔下，檢測事件變得獨立。
 
 這種現象揭示了光子的**量子統計特性**，與經典光場的行為截然不同。在經典光場中，光子的發射和檢測事件通常被視為獨立的隨機過程，但單光子源的**反聚束效應**表明了量子光場中更複雜的內在關聯。
 
 此外，這種時間上的反相關性對於**量子通信**和**量子計算**具有重要意義。例如，在量子密鑰分發中，利用單光子源的反聚束特性，可以實現安全的量子通訊，防止竊聽者同時截獲多個光子。
 
-或許你對如何在實驗中精確地測量 \\( G^{(2)}(\tau) \\)，或者探索反聚束效應與其他量子現象之間的聯繫感興趣？例如，反聚束效應如何與**量子糾纏**和**非定域性**相關聯。這些主題都是量子光學中的前沿領域，值得深入探討！
+或許你對如何在實驗中精確地測量 $ G^{(2)}(\tau) $，或者探索反聚束效應與其他量子現象之間的聯繫感興趣？例如，反聚束效應如何與**量子糾纏**和**非定域性**相關聯。這些主題都是量子光學中的前沿領域，值得深入探討！
 
 # 5.
 好的，我很樂意深入探討**時間反相關性**的物理意義和它的應用潛力。
@@ -753,28 +752,28 @@ G^{(2)}(0) = \frac{\langle \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \rang
 **希望這些信息能夠幫助您更深入地了解該領域的現狀和發展方向！如果您有更多問題，或者想討論具體的研究細節，請隨時告訴我，我很樂意與您進一步交流。**
 
 # 7.
-好的，讓我們深入探討如何在實驗中精確地測量二階相關函數 \\( G^{(2)}(\tau) \\)，並為您提供具體的實驗設置建議。
+好的，讓我們深入探討如何在實驗中精確地測量二階相關函數 $ G^{(2)}(\tau) $，並為您提供具體的實驗設置建議。
 
 ---
 
-### **一、二階相關函數 \\( G^{(2)}(\tau) \\) 的實驗測量原理**
+### **一、二階相關函數 $ G^{(2)}(\tau) $ 的實驗測量原理**
 
 **二階相關函數**描述了光子的 **時間相關性**，用於判斷光場的統計性質。其定義為：
 
-\\[
+$$
 G^{(2)}(\tau) = \frac{\langle I(t)I(t+\tau) \rangle}{\langle I(t) \rangle^2}
-\\]
+$$
 
-- \\( I(t) \\) 是光強度。
-- \\( \tau \\) 是時間延遲。
+- $ I(t) $ 是光強度。
+- $ \tau $ 是時間延遲。
 
-對於單光子源，\\( G^{(2)}(0) < 1 \\) 表明 **反聚束效應**，即光子之間存在時間上的排斥。
+對於單光子源，$ G^{(2)}(0) < 1 $ 表明 **反聚束效應**，即光子之間存在時間上的排斥。
 
 ---
 
 ### **二、實驗設置概述**
 
-為了精確測量 \\( G^{(2)}(\tau) \\)，**Hanbury Brown and Twiss (HBT) 佈局**是最經典的方法。以下是主要組成部分：
+為了精確測量 $ G^{(2)}(\tau) $，**Hanbury Brown and Twiss (HBT) 佈局**是最經典的方法。以下是主要組成部分：
 
 1. **單光子光源**：如單顆量子點、色心或二維材料中的量子缺陷。
 2. **分束器（Beam Splitter）**：通常為50/50非極化分束器，將入射光分成兩路。
@@ -817,7 +816,7 @@ G^{(2)}(\tau) = \frac{\langle I(t)I(t+\tau) \rangle}{\langle I(t) \rangle^2}
   - **優點**：極低的暗計數率，極高的時間分辨率（<20皮秒），高探測效率。
   - **缺點**：需要低溫環境（約2.7K），增加實驗複雜度。
 
-- **建議**：為了精確測量 \\( G^{(2)}(\tau) \\)，**SNSPD 是首選**，尤其在需要高時間分辨率的情況下。
+- **建議**：為了精確測量 $ G^{(2)}(\tau) $，**SNSPD 是首選**，尤其在需要高時間分辨率的情況下。
 
 #### **4. 時間相關單光子計數系統（TCSPC）**
 
@@ -846,7 +845,7 @@ G^{(2)}(\tau) = \frac{\langle I(t)I(t+\tau) \rangle}{\langle I(t) \rangle^2}
 
 - **建立時間延遲直方圖**
 
-  - 收集探測器D1和D2之間的時間差，繪製 \\( G^{(2)}(\tau) \\) 曲線。
+  - 收集探測器D1和D2之間的時間差，繪製 $ G^{(2)}(\tau) $ 曲線。
 
 - **背景扣除**
 
@@ -855,7 +854,7 @@ G^{(2)}(\tau) = \frac{\langle I(t)I(t+\tau) \rangle}{\langle I(t) \rangle^2}
 - **擬合與分析**
 
   - 使用理論模型擬合實驗數據，如單指數衰減或二項分佈模型。
-  - 提取特徵參數，如 \\( G^{(2)}(0) \\)、相干時間 \\( \tau_c \\)。
+  - 提取特徵參數，如 $ G^{(2)}(0) $、相干時間 $ \tau_c $。
 
 ---
 
@@ -910,7 +909,7 @@ G^{(2)}(\tau) = \frac{\langle I(t)I(t+\tau) \rangle}{\langle I(t) \rangle^2}
 - **數據處理中的系統誤差**
 
   - **死時間校正**：探測器和TCSPC系統的 **死時間效應** 可能導致計數損失，需要進行校正。
-  - **時間分辨率校正**：考慮探測器的時間抖動對 \\( G^{(2)}(\tau) \\) 的影響。
+  - **時間分辨率校正**：考慮探測器的時間抖動對 $ G^{(2)}(\tau) $ 的影響。
 
 ---
 
@@ -933,7 +932,7 @@ G^{(2)}(\tau) = \frac{\langle I(t)I(t+\tau) \rangle}{\langle I(t) \rangle^2}
 - 光子從單光子光源經由光纖傳輸至分束器。
 - 分束器將光子隨機分配到探測器D1和D2。
 - 探測器記錄到達的光子，並將時間信息傳遞給TCSPC系統。
-- TCSPC系統處理時間差數據，構建 \\( G^{(2)}(\tau) \\) 曲線。
+- TCSPC系統處理時間差數據，構建 $ G^{(2)}(\tau) $ 曲線。
 
 ---
 
