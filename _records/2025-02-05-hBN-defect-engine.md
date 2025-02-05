@@ -98,7 +98,7 @@ ACSApplMaterInter2016_Engineering and Localization of Quantum Emitters
     - Si
   - 515nm 230fs 1 pulse
   - electron beam 15keV
-> ltrashort laser pulses are efficient sources of free-electron acceleration because of their high peak intensities. Free electrons accelerated to energies greater than the band gap are efficient in forming defect and breaking chemical bonds. Color center formation in dielectric materials is typical under femtosecond-laser irradiation at such fluences/irradiances.
+> Ultrashort laser pulses are efficient sources of free-electron acceleration because of their high peak intensities. Free electrons accelerated to energies greater than the band gap are efficient in forming defect and breaking chemical bonds. Color center formation in dielectric materials is typical under femtosecond-laser irradiation at such fluences/irradiances.
 
 - free electrons accelerated to energies greater than the band gap
 - defect forming

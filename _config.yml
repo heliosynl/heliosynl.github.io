@@ -243,7 +243,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: true
@@ -306,13 +306,14 @@ defaults:
       type: records
     values:
       layout: single
+      read_time: true
   # _codes
   - scope:
       path: ""
       type: codes
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
 
 # Sass/SCSS
