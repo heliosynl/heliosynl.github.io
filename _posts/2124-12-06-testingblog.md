@@ -8,6 +8,13 @@ tags:
   - blog
 ---
 
+Content
+=====
+{:.no_toc}
+
+* toc
+{:toc}
+
 This post will not show up, as template
 
 This is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
@@ -22,8 +29,11 @@ Aren't headings cool?
 ------
 
 figure in html
-<br/><img src='/images/DataFig/2024Nov/LHUMMSM-Abstract-Diagram_low.png' width="400">
+<br/><img src='/images/DataFig/2024Nov/LHUMMSM-Abstract-Diagram_low.png' width="400"><br/>
+cant show in current MD viewer
+
 figure in md
+
 ![Fig](/images/DataFig/2024Nov/AuABINITData.png)
 
 table

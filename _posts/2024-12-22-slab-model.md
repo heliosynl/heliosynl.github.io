@@ -9,6 +9,14 @@ tags:
   - Modeling
   - blog
 ---
+
+Content
+=====
+{:.no_toc}
+
+* toc
+{:toc}
+
 # Atomic modeling
 Structural optimizing **bulk model** first. All the following operations are based on the relaxed **bulk model unit cell** (`vc-relax` is better, to optimize both lattice parameter and atomic coordinates).
 

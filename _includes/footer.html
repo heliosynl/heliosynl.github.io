@@ -12,6 +12,15 @@
     {% if site.author.bitbucket %}
       <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
     {% endif %}
+    {% if site.author.googlescholar %}
+      <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar"></i> GoogleScholar</a></li>
+    {% endif %}
+    {% if site.author.researchgate %}
+      <li><a href="{{ author.researchgate }}"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+    {% endif %}
+    {% if site.author.instagram %}
+      <li><a href="https://instagram.com/{{ author.instagram }}"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+    {% endif %}      
     {% if site.atom_feed.hide != true %}
     <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
     {% endif %}

@@ -6,6 +6,14 @@ type: record
 tags:
   - record
 ---
+
+Content
+=====
+{:.no_toc}
+
+* toc
+{:toc}
+
 # Title
 Nanoscale Optoelectronic Materials through Theoretical Modeling
 

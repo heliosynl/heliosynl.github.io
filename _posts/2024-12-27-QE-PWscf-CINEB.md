@@ -11,6 +11,14 @@ tags:
   - Energy Barrier
   - blog
 ---
+
+Content
+=====
+{:.no_toc}
+
+* toc
+{:toc}
+
 # Atomic Modeling
 See [SlabModeling](/posts/2024/blog1222/) for slab modeling
 

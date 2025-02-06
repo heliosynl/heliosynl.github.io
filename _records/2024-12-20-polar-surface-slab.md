@@ -11,6 +11,13 @@ tags:
   - record #blog
 ---
 
+Content
+=====
+{:.no_toc}
+
+* toc
+{:toc}
+
 # NJP2010_A comparative DFT study of electronic properties
 SiC surface slab modeling
 ## Atomic modeling

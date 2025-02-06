@@ -10,6 +10,14 @@ tags:
   - PWscf
   - blog
 ---
+
+Content
+=====
+{:.no_toc}
+
+* toc
+{:toc}
+
 Band structure refers to the **electronic band structure** in solid state physics. In general, band structure is the **k-E** (or k-$$\omega$$) relation of the electrons distrbuting in crystaline, periodic systems. By analyzing band structure, electronic properties such as
 - band gap and its type (direct or indirect), high symmetry points
 - phase velocity ($$v_{phase}=\frac{\omega}{k}$$)
