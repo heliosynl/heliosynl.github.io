@@ -4,9 +4,17 @@ date: 2025-02-04
 excerpt: 'Records of Copilot chatting about quantum emitter'
 type: notes
 tags:
-  - Quantum Emitter
+  - SPEs
   - notes
 ---
+
+Content
+=====
+{:.no_toc}
+
+* toc
+{:toc}
+
 # 1. 分別描述對於單光子源和相干光源的情況下，二階相關函數的計算過程，尤其是考慮電場算符時的計算過程
 好的，我將分別描述在**單光子源**和**相干光源**的情況下，二階相關函數 $ G^{(2)}(\tau) $ 的計算過程，特別是電場算符的計算。
 

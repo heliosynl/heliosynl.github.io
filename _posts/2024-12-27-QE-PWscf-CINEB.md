@@ -400,3 +400,6 @@ is the same as NEB
 # 3. Migration Energy Barrier
 Can use [EnergyBarrier](/codes/energybarrier/) to plot the reaction energy barrier
 ![EnergyBarrierplot](/images/notes/2024-12-27-QE-PWscf-CINEB/EnergyBarrier.png)
+
+# Reference can take a look:
+[Unraveling the mechanism of vanadium self-intercalation in 1T-VSe2: atomic-scale evidence for phase transition and superstructure model for intercalation compound](https://doi.org/10.1088/2053-1583/ad2193)

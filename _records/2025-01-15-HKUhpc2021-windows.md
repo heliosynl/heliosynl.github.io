@@ -112,7 +112,7 @@ drwxr-xr-x 2 ynl08 student    0 Jan 11 18:34 Jan11_100hrs
 
 |no need|no need|user|no need|file size|last modified date (in month|day|time)|file name|
 |-------|-------|----|-------|---------|----------------------------|---|-----|---------|
-||||||||||
+|-rwxr-xr-x|1|ynl08|student|930|Jan|11|15:22|run.sh|
 
 - `mkdir <new directory name>`
   - make new directory (folder)
@@ -150,7 +150,7 @@ only need to know the column `ST`, `NODES`, `CPUS`, `TIME_LIMIT`, `TIME_LEFT`
 #SBATCH --partition=amd                   # 3. Request a partition
 #SBATCH --mail-user=youremail@connect.hku.hk  #    Email address to receive notification
 #SBATCH --qos=normal                      # 4. Request a QoS
-#SBATCH --njobs=64                       # 5. Request total number of jobs (MPI workers)
+#SBATCH --ntasks=64                       # 5. Request total number of jobs (MPI workers)
 #SBATCH --nodes=1                         # 6. Request number of node(s), 1 is ok
 #SBATCH --mem=200G                        # 7. RAM assignment, more RAM makes longer queuing time, comsol need larger, but 200G is ok
 #SBATCH --time=0-12:00:00                 # 8. Job execution duration limit day-hour:min:sec

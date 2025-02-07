@@ -7,6 +7,15 @@ tags:
   - bash
   - notes
 ---
+
+Content
+=====
+{:.no_toc}
+
+* toc
+{:toc}
+
+# Header
 ```sh
 #!/bin/bash
 ```
@@ -169,3 +178,32 @@ plot in terminal
 - `plot 'filename' u 1:2 w l` (using 1:2 default) 
 - `set terminal dumb` for plotting in terminal but not new window 
 - `plot 'filename' u 1:2 w l t 'labelname'`
+
+check [gnuplot cheat sheet](http://www.gnuplot.info/docs_4.0/gpcard.pdf)
+# ssh
+```sh
+sudo apt install openssh openssh-server
+```
+
+- start ssh server: `sudo service sshd start` or `sudo systemctl start sshd`
+- check server status: `sudo service sshd status` or `sudo systemctl status sshd`
+
+## password-less login: client
+- Generate private and public keys
+  - `ssh-keygen`
+    - press Enter is ok
+  - can find:
+    - public key at `~/.ssh/id_rsa.pub`
+    - private key at `~/.ssh/id_rsa`
+  - copy **public key** to the **server**
+    - `ssh-copy-id name@serverip`
+    - instead, copy the content in `id_rsa.pub` to server side `~/.ssh/authorized_keys`
+## sshfs
+- Install openssh openssh-server
+  - It is okay when the machine can be connected with other machine through ssh
+- Install sshfs
+  - `sudo apt install sshfs`
+- Then add the current user into the fuse group (administrative group of using sshfs)
+  - Check if there is a fuse group: `cat /etc/group | grep 'fuse'`
+  - If there is not: `sudo groupadd fuse`
+- Then: `sudo usermod -a -G fuse your_username`

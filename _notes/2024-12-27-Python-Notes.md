@@ -7,6 +7,14 @@ tags:
   - bash
   - notes
 ---
+
+Content
+=====
+{:.no_toc}
+
+* toc
+{:toc}
+
 # Python
 ## import
 ```python
@@ -252,6 +260,15 @@ ax.add_patch(rec)
 ## Scientific notation fontsize 
 `ax.yaxis.offsetText.set_fontsize(24)`
 
+## Chinese characters displaying
+```python
+From matplotlib.font_manager import FontProperties
+font = FontProperties(fname="XXX.ttf", size=12) # .ttf is located under same folder with .py
+# size=12 only influence ax.legend
+ax.plot(x, y, label="Chinese")
+ax.legend(prop=font)
+ax.set_title("Chinese", fontsize=18, fontproperties=font)
+```
 # OS 
 ## input file
 ```python

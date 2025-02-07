@@ -5,8 +5,8 @@ excerpt: 'Some paper about hBN quantum defect engineering, for single photon emi
 type: record
 tags:
   - hBN
-  - quantum defect
-  - defect engineering
+  - Quantum Defect
+  - Defect Engineering
   - SPEs
   - record
 ---
@@ -112,3 +112,12 @@ ACSApplMaterInter2016_Engineering and Localization of Quantum Emitters
 - femtosecond laser pulse
 - full polarization behavior
 - didnt come up with any information of the defect classification
+
+[Creation and repair of luminescence defects in hexagonal boron nitride by irradiation and annealing for optical neutron detection](https://doi.org/10.1016/j.jlumin.2023.119911)
+=====
+
+[A quantum coherent spin in hexagonal boron nitride at ambient conditions](https://doi.org/10.1038/s41563-024-01887-z)
+=====
+
+[Atomic and Electronic Structure of Defects in hBN: Enhancing Single-Defect Functionalities](https://pubs.acs.org/doi/10.1021/acsnano.4c03640)
+======

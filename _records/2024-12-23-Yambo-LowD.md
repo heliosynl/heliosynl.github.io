@@ -23,12 +23,12 @@ Optical responses of materials can be computed based on linear response theory, 
 
 $$\vec D(\omega)=\varepsilon_0 \varepsilon_r(\omega) \vec E(\omega)=\varepsilon_0 (1+\chi) \vec E$$
 
-in which $$\varepsilon_r=1+\chi$$ is the **relative** dielectric constant, and $$\chi$$ is the electric susceptibility, defining the polarization field $$\vec P=\chi \vec E$$
+in which $$\varepsilon_r=1+\chi$$ is the **relative** dielectric constant, and $$\chi$$ is the electric susceptibility, defining the polarization field $\vec P=\chi \vec E$
 
-For simply, use $$\varepsilon(\omega)=1+\chi(\omega)$$ as relative dielectric function, considering its spectral dispersion.
+For simply, use $\varepsilon(\omega)=1+\chi(\omega)$ as relative dielectric function, considering its spectral dispersion.
 
 # Theory
-In short, the (**reversed**) dielectric function is the **response function** of the external field. Or, the electrical susceptibility is response function. The generalized form of the definition of response function $$\chi(t)$$ is
+In short, the (**reversed**) dielectric function is the **response function** of the external field. Or, the electrical susceptibility is response function. The generalized form of the definition of response function $\chi(t)$ is
 
 $$F(t)=\int_0^{\infty} \chi(\tau) g(t-\tau) d\tau $$
 
