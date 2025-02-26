@@ -27,7 +27,8 @@ atomsk model.scf.in vesta
 ```
 
 Atomsk is an open-sourced command-line modeling code. VESTA is an open-source atomic model visualization code. Open the model in .vesta format with VESTA can get
-<br/><img src='/images/notes/2024-12-22-slab-model/4H-SiCbulk.png' width=400>
+
+![bulk](/images/notes/2024-12-22-slab-model/4H-SiCbulk.png)
 
 For example, a 4H-SiC (0001) 1x1x2 slab model is building, vacuum at the z direction.
 ## Duplicate unit cell
@@ -35,26 +36,30 @@ For example, a 4H-SiC (0001) 1x1x2 slab model is building, vacuum at the z direc
 - Transform
 - Multiply the diagonal element by the multiplier needed, 1 1 2 here
 - Notification windows not important
-<br/><img src='/images/notes/2024-12-22-slab-model/4H-SiC112.png' width=400>
+
+![112](/images/notes/2024-12-22-slab-model/4H-SiC112.png)
 
 ## Include the topmost atomic layer and Remove the repetitive atoms
 - Objects-Boundary
 - x(max) and y(max) take value slightly **smaller** than 1 (e.g. 0.9)
 - z(max) takes value slightly **bigger** than 1 (e.g. 1.1)
 - confirm whether (1) additional atomic layer is added (2) extra atoms at the boundary are removed
-<br/><img src='/images/notes/2024-12-22-slab-model/4H-SiCboundary.png' width=400>
+
+![boundary](/images/notes/2024-12-22-slab-model/4H-SiCboundary.png)
 
 ## Remove extra atoms bonded
 - Edit-Bonds
 - Boundary mode - Do not search atoms beyond the boundary
   - usually Max. length 2.4 can see bonds (empirical), for metallic bond 2.6
-<br/><img src='/images/notes/2024-12-22-slab-model/4H-SiCbonds.png' width=400>
+
+![bonds](/images/notes/2024-12-22-slab-model/4H-SiCbonds.png)
 
 After these, a simplier 1x1x2 model was get.
 
 ## Convert to PWscf format
 Before output, go `View along the c axis` and check **No external** atoms exist
-<br/><img src='/images/notes/2024-12-22-slab-model/4H-SiCcaxis.png' width=400>
+
+![caxis](/images/notes/2024-12-22-slab-model/4H-SiCcaxis.png)
 - File-Export Data
 - in `.xyz` format
 - Dont save hidden atoms
@@ -98,7 +103,8 @@ Last step, change `nat` and `ATOMIC_POSITIONS angstrom` to content in .xyz file,
   - can make the model align to the cell center
     - z-coordinates + half length of vacuum layer
 - If polar system/orientation, need to add pseudo-Hydrogen atoms. See more in [PseudoHPseudopot](/about/) and [PolarSurface](/about/)
-<br/><img src='/images/notes/2024-12-22-slab-model/4H-SiCslab.png' width=400>
+
+![slab](/images/notes/2024-12-22-slab-model/4H-SiCslab.png)
 
 # Model illustrating
 To format the model illustration, can follow the below step
@@ -142,7 +148,9 @@ The output figure will be the same size of the VESTA window, can shrink the wind
   - Let the background transparent
 
 Wide figure:
-<br/><img src='/images/notes/2024-12-22-slab-model/4H-SiCslabC.png' width=800>
+
+![slabC](/images/notes/2024-12-22-slab-model/4H-SiCslabC.png)
 
 Narrow figure (Square figure here):
-<br/><img src='/images/notes/2024-12-22-slab-model/z011-222slab.png' width=800>
+
+![222slab](/images/notes/2024-12-22-slab-model/z011-222slab.png)

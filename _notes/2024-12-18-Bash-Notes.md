@@ -134,10 +134,18 @@ Replace 'pattern' in 'parameter' with 'string'
 
 ``b=${tmp%_*}``remove suffix starting with "_"
 
+### sed
 ```sh
-sed -i -e 's/abc/XYZ/g' /tmp/file.txt
+sed -i 's/abc/XYZ/g' /tmp/file.txt
 ```
-which will invoke ``sed`` to do an in-place edit due to the -i option. The /g flag for sed's s command says to replace globally, i.e. do not substitute only the first occurrence on each input line. This can be called from Bash.
+which will invoke ``sed`` to do an in-place edit due to the -i option. The **g** flag use to replace globally without line number, i.e. do not substitute only the first occurrence on each input line. This can be called from Bash.
+
+#### replace
+```sh
+sed -i '3s/origin/new/' /tmp/file.txt
+```
+replace the **origin** string to **new** in **line 3**
+
 
 ### Lock screen by bash
 ```sh
