@@ -136,7 +136,7 @@ Can also use Python script [KptPath](/codes/kptpath/) with `K_POINTS crystal`, s
 &BANDS
   prefix = ''
   outdir = ''
-  filband = '_bands.dat'
+  filband = '_qebands.dat'
 /
 
 ```
@@ -207,7 +207,7 @@ After doing [bands.x](#4-bandsx-post-processing) postprocessing, do another `pro
   outdir = './calout'
   DeltaE = 0.01
   filpdos = './PDOS/_pdos.dat'
-  filproj = './PROJ/_bands.dat'
+  filproj = './PROJ/_qebands.dat'
   lsym = .false. ! symmetrized
   lwrite_overlaps = .false. ! output of overlap matrix of atomic orbitals, in xml
   kresolveddos = .false. ! k resolved DOS
@@ -316,13 +316,14 @@ And total two carbon atoms, so it can be found that
 Similar to simple [plotband.x](#5-plotbandx), but the projected file makes some difference
 
 > Remember to go into ./PROJ/ if you created and stored _bands.dat and _bands.dat.proj into
+
 ```sh
 > plotband.x
      Input file 
 > _bands.dat
 Reading   10 bands at    251 k-points
 List of atomic wavefunctions:
-> 1 4
+> 1 5
 Range:  -23.7690   10.4000eV  Emin, Emax, [firstk, lastk]
 > -25,12
 high-symmetry point:  0.0000 0.0000 0.0000   x coordinate   0.0000
@@ -352,7 +353,7 @@ Files not useful (can delete):
 Additional setting compared to simple band structure:
 - `List of atomic wavefunctions:`
   - **orbital index** in [_bands.dat.proj](#_bandsdatproj)
-  - here picked the two 2S orbitals (1,4, can be found in _bands.dat.proj)
+  - here picked the two 2S orbitals (1,5, can be found in _bands.dat.proj)
 - `Efermi`
   - Fermi energy from `nscf.out`
 - `deltaE, reference E (for tics)`
@@ -398,7 +399,7 @@ can use the following codes for faster plotting (graphene case):
 **plotband.x input** (2s for example)
 
 ```
-mono_ppbands.dat
+_bands.dat
 1 5
 -25 12
 gnuplot2s
@@ -412,14 +413,20 @@ gnuplotscript2s
 ```sh
 #!/bin/sh
 
+cd ./PROJ
+element='C' # can be atom specific
 for i in 2s 2p1 2p2 2p3;do
-	plotband.x < ppband${i}.in > out.ppband${i}
-	sed -i '2s/^/#/' gnuplotscript${i}
-	gnuplot -p gnuplotscript${i}
+	plotband.x < ${element}${i}.in > out.ppbands${element}${i}
+	sed -i '2s/^/#/' gnuplotscript${element}${i}
+	sed -i '3s/^/#/' gnuplotscript${element}${i}
+	sed -i '2s/$/\nset term png/' gnuplotscript${element}${i}
+	sed -i '3s/$/\nset output "'${element}${i}'.png"/' gnuplotscript${element}${i}
+	gnuplot -p gnuplotscript${element}${i}
 done
 
 rm gnuplot*.1
 rm ps
+
 ```
 
 - 2S
