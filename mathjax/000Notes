@@ -1,0 +1,10 @@
+Download the full dependence of MathJax3.2.2, and modified some content in ./es5/tex-mml-chtml.js
+
+Added:
+OPTIONS={inlineMath:[["\\(","\\)"],["$","$"]]
+
+Origin:
+OPTIONS={inlineMath:[["\\(","\\)"]]
+
+Source:
+https://www.jsdelivr.com/package/npm/mathjax?tab=files

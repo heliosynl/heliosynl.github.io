@@ -1,0 +1,11 @@
+---
+title: "Ab Initio calculation of Electron Temperature Dependent Heat Capacity and Electron Phonon Coupling Factor of Noble Metals"
+collection: talks
+type: "Conference Presentation"
+permalink: /talks/2022-06-24-ab-initio-calculation-electron-temperature
+venue: "IEEE-MTNM 2022"
+date: 2022-06-24
+location: "Virtual Conference"
+---
+
+Noble metal nanoparticles show fantastic catalytic property in both scientific research and industrial applications. To generate nanoparticles via femtosecond laser ablation is gaining increasing interest in the past decades. In this presentation, a serials of ab initio calculations for four typical noble metals (gold, palladium, iridium, and rhodium) are to be delivered, focusing on three pivotal parameters in the two-temperature model (electron heat capacity, phonon heat capacity, and electron-phonon coupling factor), which describes the thermal repsonse of the electron subsystem to the femtosecond laser irradiation and the electron-phonon coupled energy transfer between the electron subsystem and the lattice subsystem. In respect of the electron subsystem, by increasing electron temperature as the deposition of laser energy in the electron subsystem, the electron transitions from d orbitals to sp orbitals and from sp orbitals to d orbitals are observed for metals with fully and partially filled d block. It is highlighted that the change of electron density of states and Fermi-Dirac distribution function with the increasing electron temperature are the major factors affecting the electron heat capacity and electron-phonon coupling factor. In respect of the lattice subsystem, electron temperature shows little contribution to phonon heat capacity in spite of conspicuous impact on phonon density of states. Debye model and Debye temperature are tools to investigate thermodynamic properties straightforwardly, the calculation results reveal that Debye temperature as a disparate function of electron temperature for the investigated metals. In summary, this presentation conducts an insight attempt to explain the influence of femtosecond laser irradiation on noble metals, providing a ground of fabricating noble metal nanoparticles with femtosecond laser theoretically.
