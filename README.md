@@ -21,3 +21,37 @@ if cant,
 [2025-02-04 09:23:52] ERROR '/images/favicon-96x96.png' not found.
 [2025-02-04 09:23:52] ERROR '/images/android-chrome-192x192.png' not found.
 ```
+
+### 2025Apr27
+Changed files compared to template:
+/_config.yml
+/README.md
+/_teaching
+/_talks
+/_research
+/_records
+/_publications
+/_posts
+/_pages/about.md
+/_pages/codes.html
+/_pages/cv.md
+/_pages/notes.html
+/_pages/posts.html
+/_pages/publications.html
+/_pages/records.html
+/_pages/research.html
+/_pages/sitemap.md
+/_notes
+/_layouts/single_notes.html
+/_includes/comments-providers/custom.html
+/_includes/archive-post.html
+/_includes/archive-single_backup.html
+/_includes/archive-single-talk.html
+/_includes/archive-single.html
+/images
+/files
+/_data/navigation.yml
+/_codes
+
+remove
+/_portfolio

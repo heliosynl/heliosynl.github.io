@@ -105,3 +105,13 @@ K_POINTS automatic
   - use [kpointgen]() to generate **uniform** k point mesh
   - also `30 30 1` here but uniform mesh (try less for testing)
 
+# 3. Wannier90 pre-processing
+wannier90.x input file
+
+`wannier90.x -pp seedname`
+
+# 4. PWSCF to Wannier90
+`mpirun pw2wannier90.x < prefix.pw2wan.in > pw2wan.prefix.out`
+
+# 5. Wannier90
+`wannier90.x seedname`
