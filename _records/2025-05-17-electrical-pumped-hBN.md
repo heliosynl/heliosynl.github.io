@@ -15,6 +15,7 @@ Content
 {:toc}
 
 # Introduction
+
 p1
 =====
 1. defects in quantum technologies 
@@ -38,6 +39,7 @@ p3
 5. brief conclusion, outlook of the electrically pumped hBN SPE, potential applications in compact devices, chip-based quantum information
 
 # Results and dicussion
+
 p1
 =====
 1. device configuration
