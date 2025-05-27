@@ -89,10 +89,10 @@ reference: https://www.mdpi.com/2304-6740/13/2/36
             - -0.7831950800000413
       - 6W4L2
         - /May22/6W4L2/
-        - relaxing
-          - cuh2o6l42=
-            - cuh2o6l41-singlecu2-singleh2o*6
-              - 0
+        - relaxed scf finished
+          - cuh2o6l42=-667.06330550
+            - cuh2o6l42-singlecu2-singleh2o*6
+              - -0.8521010599999954
     - reference https://pubs.acs.org/doi/abs/10.1021/jp1000804
 
 - CuCl(H2O)5
@@ -142,6 +142,15 @@ reference: https://www.mdpi.com/2304-6740/13/2/36
     - this paper pointed out, for Cu chloride, whatever valence, coordination number with Cl- increased with increasing Cl- ion concentration in solvation, predicted the existence of Cu(I)Cl3 2- even at low concentration.
     - but my calculation cant predict the structure of Cu(I)Cl3 2-, this paper also not considered the structure but only the reaction
 
+- Cl(H2O)6
+  - /May25/Cl6W-1/
+  - reference https://doi.org/10.1039/C3CP50652E
+    - chloride ion prefer coordinated with six water molecules, symmetrically H-bonding
+    - essential degeneracy between water-water and water-Cl H-bonding, strong similarity in the water and chloride electronic structure
+  - reference https://doi.org/10.1080/00268976.2015.1059959
+    - PBE vdW XC AIMD, sixfold Cl-O coordination is dominated, in the first solvation shell surrounding the Cl- ion
+    - O-Cl-O angular distribution showing $theta\approx 75 \degree$, indicating **distorted** trigonal prismatic structures
+
 # 2025-05-26
 energy diagram drawing
 
@@ -165,7 +174,32 @@ doing:
 
 not yet done:
 - 3W2Cl
-  - need modeling
+  - modeling
 - 4W1Cl1
 - 4W1Cl2
 - 5W5L
+
+# 2025-05-27
+doing:
+- Cl(H2O)6
+  - relaxing
+- 3W2Cl
+  - relaxing
+- 4W1Cl1
+  - relaxing
+- 4W1Cl2
+  - relaxing
+- 5W5L
+  - relaxing
+- methods
+- SI
+  - graphing
+
+-----
+# Results
+
+# Reference
+- DFT calculation MIT Chem
+  - https://doi.org/10.1021/acs.jpclett.2c01026
+  - B3LYP
+  - single point
