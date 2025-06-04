@@ -111,7 +111,7 @@ reference: https://www.mdpi.com/2304-6740/13/2/36
       - cucl2h2o4=-649.32743653
         - cucl2h2o4-singlecu2-singlecl*2-singleh2o*4
           - -1.4202835300000345
-  - reference https://pubs.acs.org/doi/abs/10.1021/jp1000804
+  - reference https://pubs.acs.org/doi/10.1021/jp909092p
 
 
 - Cu(I) chloride
@@ -207,8 +207,105 @@ doing:
 
 -----
 # Results
+## singleatom
+singlecu2=-401.96197944
+singlecu1=-403.07135668
+singlecl=-34.88951178
+singleh2o=-44.04153750
+
+## Cu2+
+### 5L
+- 3W2Cl
+  - [CuCl2(H2O)3]0
+  - cucl2h2o3=-605.21675997
+  - cucl2h2o3-singlecu2-singlecl\*2-singleh2o\*3
+  - -1.3511444700000368
+  - -18.38326632
+- 4W1Cl1
+  - [CuCl(H2O)4]1+
+  - cuclh2o4l1=-614.15869898
+  - cuclh2o4l1-singlecu2-singlecl-singleh2o*4
+  - -1.1410577600000806
+  - -15.52488957
+- 4W1Cl2
+  - [CuCl(H2O)4]1+
+  - cuclh2o4l2=-614.13798055
+  - cuclh2o4l2-singlecu2-singlecl-singleh2o*4
+  - -1.1203393299999789
+  - -15.24300082
+- 5W5L
+  - [Cu(H2O)5]2+
+  - cuh2o5=-622.85887760
+  - cuh2o5-singlecu2-singleh2o*5
+  - -0.6892106600000432
+  - -9.377193477
+
+### 6L
+- 4W2Cl
+  - [CuCl2(H2O)4]0
+  - cucl2h2o4=-649.32743653
+  - cucl2h2o4-singlecu2-singlecl\*2-singleh2o\*4
+  - -1.4202835300000345
+  - -19.32395162
+- 5W1Cl
+  - [CuCl(H2O)5]1+
+  - cuclh2o5=-658.25247725
+  - cuclh2o5-singlecu2-singlecl-singleh2o*5
+  - -1.1932985299999928
+  - -16.23566181
+- 6W4L1
+  - [Cu(H2O)6]2+
+  - cuh2o6l41=-666.99439952
+  - cuh2o6l41-singlecu2-singleh2o*6
+  - -0.7831950800000413
+  - -10.6559173
+- 6W4L2
+  - [Cu(H2O)6]2+
+  - cuh2o6l42=-667.06330550
+  - cuh2o6l42-singlecu2-singleh2o*6
+  - -0.8521010599999954
+  - -11.59343139
+- 6W5L
+  - [Cu(H2O)6]2+
+  - cuh2o6l5=-667.01612658
+  - cuh2o6l5-singlecu2-singleh2o*6
+  - -0.8049221400000306
+  - -10.95152916
+
+## Cu1+
+- 0W1Cl+1
+  - [CuCl]0
+  - cucl=-438.29948177
+  - cucl-singlecu1-singlecl
+  - -0.3386133099999924
+  - -4.607071112
+- 1W1Cl+1
+  - [CuClH2O]0
+  - cuclh2o=-482.42694170
+  - cuclh2o-singlecu1-singlecl-singleh2o
+  - -0.42453573999998184
+  - -5.776105918
+- 0W2Cl+1
+  - [CuCl2]1-
+  - cucl2=-473.36700849
+  - cucl2-singlecu1-singlecl*2
+  - -0.5166282499999824
+  - -7.029088981
+
+## Cl-1
+- Cl6W-1
+  - [Cl(H2O)6]1-
+  - clh2o6=-299.28590227
+  - clh2o6-singlecl-singleh2o*6
+  - -0.14716549000002033
+  - -2.002289507
+
 
 # Reference
+- CuH2O and CuClH2O different configuration
+  - reference https://pubs.acs.org/doi/abs/10.1021/jp1000804
+- CuCl2H2O different configuration
+  - reference https://pubs.acs.org/doi/10.1021/jp909092p
 - DFT calculation MIT Chem
   - https://doi.org/10.1021/acs.jpclett.2c01026
   - B3LYP
