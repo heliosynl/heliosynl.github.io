@@ -49,12 +49,14 @@ drawing atomic model
   - Cu1+
     - #A35331
     - #FFA57F
+    - #FF8653 
   - O
     - #7E7E7E
   - H
     - #BFBFBF
   - Cl
     - #1EFFEF
+#23b8ae
 
 # 2025-05-25
 - **maybe not correct (not pure Cu-Cl complex but with other atoms)**
@@ -302,15 +304,40 @@ singleh2o=-44.04153750
 
 
 # Reference
-- CuH2O and CuClH2O different configuration
+- 2+ CuH2O and CuClH2O different configuration
   - reference https://pubs.acs.org/doi/abs/10.1021/jp1000804
-- CuCl2H2O different configuration
+- 2+ CuCl2H2O different configuration
   - reference https://pubs.acs.org/doi/10.1021/jp909092p
 - DFT calculation MIT Chem
   - https://doi.org/10.1021/acs.jpclett.2c01026
   - B3LYP
   - single point
-
+- 1+ Cu
+  - XAFS 2000
+    - https://doi.org/10.1016/S0009-2614(00)01110-6
+    - Cu1+ linear monochloro and dichloro species
+    - no observes of chloride with higher coordination
+  - AIMD 2007 Sherman
+    - https://doi.org/10.1016/j.gca.2006.09.015
+    - predict CuCl3 and CuCl4 at high concentration
+  - AIMD 2013 Mei
+    - https://doi.org/10.1016/j.gca.2012.10.027
+    - low formation constant of CuCl3
+  - XAS 2007 Brugger
+    - https://doi.org/10.1016/j.gca.2007.08.003
+    - only at very high concentration
+  - Raman 2013 Applegarth
+    - https://doi.org/10.1021/jp406580q
+    - CuCl3 only at very high concentration
+    - dft predicted linear
+    - but dft can predict CuCl3 structure
+- Cl-
+  - reference https://doi.org/10.1039/C3CP50652E
+    - chloride ion prefer coordinated with six water molecules, symmetrically H-bonding
+    - essential degeneracy between water-water and water-Cl H-bonding, strong similarity in the water and chloride electronic structure
+  - reference https://doi.org/10.1080/00268976.2015.1059959
+    - PBE vdW XC AIMD, sixfold Cl-O coordination is dominated, in the first solvation shell surrounding the Cl- ion
+    - O-Cl-O angular distribution showing $theta\approx 75 \degree$, indicating **distorted** trigonal prismatic structures
 # 2025-06-03
 ADF in AMS
 - Task - Geometry Optimization
