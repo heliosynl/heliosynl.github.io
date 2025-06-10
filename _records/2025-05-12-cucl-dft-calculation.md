@@ -243,12 +243,18 @@ singleh2o=-44.04153750
   - -9.377193477
 
 ### 6L
-- 4W2Cl
+- 4W2Cl1
   - [CuCl2(H2O)4]0
-  - cucl2h2o4=-649.32743653
-  - cucl2h2o4-singlecu2-singlecl\*2-singleh2o\*4
+  - cucl2h2o41=-649.32743653
+  - cucl2h2o41-singlecu2-singlecl\*2-singleh2o\*4
   - -1.4202835300000345
   - -19.32395162
+- 4W2Cl2
+  - [CuCl2(H2O)4]0
+  - cucl2h2o42=-649.31965224
+  - cucl2h2o42-singlecu2-singlecl\*2-singleh2o\*4
+  - -1.4124992400000167
+  - -19.21804090966823
 - 5W1Cl
   - [CuCl(H2O)5]1+
   - cuclh2o5=-658.25247725
