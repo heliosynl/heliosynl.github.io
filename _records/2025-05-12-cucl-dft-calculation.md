@@ -214,6 +214,7 @@ singlecu2=-401.96197944
 singlecu1=-403.07135668
 singlecl=-34.88951178
 singleh2o=-44.04153750
+singlebr=-46.83642638
 
 ## Cu2+
 ### 5L
@@ -299,6 +300,13 @@ singleh2o=-44.04153750
   - cucl2-singlecu1-singlecl*2
   - -0.5166282499999824
   - -7.029088981
+- 0W2Br+1
+  - [CuBr2]1-
+  - cubr2=-497.80633664
+  - cubr2-singlecu1-singlebr*2
+  - -1.0621271999999777
+  - -14.450984045039698
+
 
 ## Cl-1
 - Cl6W-1
@@ -423,3 +431,8 @@ can get
   - -13.0357
 - Gibbs free energy (eV)
   - -13.8893
+
+# 2025-07-09
+CuBr2 +1
+
+/cucl/Br/Jun26

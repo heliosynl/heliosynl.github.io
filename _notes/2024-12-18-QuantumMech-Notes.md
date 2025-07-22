@@ -69,3 +69,6 @@ c=299792458 #m/s
 - $$1 \rm A\cdot m^2/kg=1 \rm emu/g$$
 - $$1 \rm emu/mol=\frac{10^{−3} μ_B}{9.274×10^{−24}\times6.023\times10^{23} f.u.}=\frac{1}{5585} μ_B/f.u.$$
 - Where $$f.u.$$ refers to formula unit 
+
+# charged defect formation energy
+[reference](https://www.pwmat.com/modulefiles/pwmat-resource/module-download7/pdf/Charged%20defect%20calculation-module.pdf)
