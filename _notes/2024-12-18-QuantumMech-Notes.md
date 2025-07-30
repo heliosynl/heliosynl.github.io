@@ -71,4 +71,6 @@ c=299792458 #m/s
 - Where $$f.u.$$ refers to formula unit 
 
 # charged defect formation energy
-[reference](https://www.pwmat.com/modulefiles/pwmat-resource/module-download7/pdf/Charged%20defect%20calculation-module.pdf)
+[3Dreference](https://www.pwmat.com/modulefiles/pwmat-resource/module-download7/pdf/Charged%20defect%20calculation-module.pdf)
+
+[2Dreference](https://www.pwmat.com/modulefiles/pwmat-resource/module-download7/pdf/guide_defect_level_20240709.pdf)
