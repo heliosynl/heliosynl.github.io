@@ -436,3 +436,11 @@ can get
 CuBr2 +1
 
 /cucl/Br/Jun26
+
+# 2025-08-01
+pva chain with 20 monomer [ATB](https://atb.uq.edu.au/molecule.py?molid=1536128)
+
+use the SMILES code and convert to .pdb [smiles2pdb](https://www.novoprolabs.com/tools/smiles2pdb)
+
+download .pdb file and convert to lammps file .lmp [ligpargen](https://zarbi.chem.yale.edu/ligpargen/)
+
