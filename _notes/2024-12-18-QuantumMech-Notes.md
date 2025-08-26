@@ -38,7 +38,9 @@ me = 9.1093837e-31 #kg
 charge=1.60218E-19 #C
 c=299792458 #m/s
 ```
-
+- vertical: original unit
+- horizontal: target unit
+ 
 |    | Ha | J | eV | Ry | K (Temp) | GHz |
 | ----|----|---|---|---|------|---|
 | Ha | 1  | 4.359745e-18| 27.211396132 | 2 | 3.157750e+05 | 6.579684e+06|

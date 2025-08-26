@@ -134,19 +134,27 @@ Piecewise Cubic Hermite Interpolating Polynomial
 # Matplotlib
 
 ```python
-fig,ax = plt.subplots(1,1,figsize=(6,5), dpi=200, sharex=True, sharey=True,width_ratios=[1])
+from matplotlib.font_manager import FontProperties
+from matplotlib.ticker import MultipleLocator
+fig,ax = plt.subplots(1,1,figsize=(6,3), dpi=200, sharex=True, sharey=True,width_ratios=[1])
+# axinset = ax.inset_axes([0.37,0.15,0.3,0.5],xlim=(5.9,8.1),ylim=(0.9921,1.0055))
+figgo=make_subplots(rows=1,cols=1,insets=[dict(cell=(1,1),w=0.3,l=0.35,h=0.5,b=0.15)])
 plt.style.use("default")
-plt.rcParams["lines.linewidth"] = 2
-plt.rcParams["axes.linewidth"] = 1
-plt.rcParams["xtick.major.width"] = 1
-plt.rcParams["ytick.major.width"] = 1
-plt.rcParams["xtick.minor.width"] = 1
-plt.rcParams["ytick.minor.width"] = 1
-xmajorLocator = MultipleLocator(5)
-ax.xaxis.set_major_locator(xmajorLocator)
-ymajorLocator = MultipleLocator(5)
-ax.yaxis.set_major_locator(ymajorLocator)
-font = FontProperties(fname="../arial.ttf", size=12)
+plt.rcParams["lines.linewidth"] = 1.5
+plt.rcParams["axes.linewidth"] = 0.5
+plt.rcParams["xtick.major.width"] = 0.5
+plt.rcParams["ytick.major.width"] = 0.5
+plt.rcParams["xtick.minor.width"] = 0.5
+plt.rcParams["ytick.minor.width"] = 0.5
+# xmajorLocator = MultipleLocator(100)
+# xminorLocator = MultipleLocator(50)
+# ax.xaxis.set_major_locator(xmajorLocator)
+# ax.xaxis.set_minor_locator(xminorLocator)
+# ymajorLocator = MultipleLocator(100)
+# yminorLocator = MultipleLocator(50)
+# ax.yaxis.set_major_locator(ymajorLocator)
+# ax.yaxis.set_minor_locator(yminorLocator)
+font = FontProperties(fname="../Helvetica.ttf", size=10)
 ```
 
 ## Marker
@@ -167,7 +175,7 @@ ax.fill_between(x,y,0,alpha=0.6)
 
 ## Real Colormap 
 ```python
-colormap = ax.plot(x, y, color=plt.cm.get_cmap('colormapname')(np.linspace(0,1,n)
+colormap = ax.plot(x, y, color=plt.cm.get_cmap('colormapname')(np.linspace(0,1,n))
 ax.plot(x, y, color=colormap[num]) 
 ```
 
@@ -252,7 +260,15 @@ ax.add_patch(rec)
 ```
 
 ## Transparent background 
-`plt.savefig('demo.png', transparent=True,bbox_inches='tight')`
+```python
+py_file = __file__
+work_dir = py_file[:len(py_file)-py_file[::-1].index('/')]
+py_file = py_file[len(py_file)-py_file[::-1].index('/'):]
+os.chdir(work_dir)
+
+fig.tight_layout()
+plt.savefig('hBNsapphire113KPL.png',transparent=True,bbox_inches='tight')
+```
 
 ## Remove scientific notation 
 `ax.ticklabel_format(style='plain') `
@@ -269,6 +285,12 @@ ax.plot(x, y, label="Chinese")
 ax.legend(prop=font)
 ax.set_title("Chinese", fontsize=18, fontproperties=font)
 ```
+
+## Legend cols, spacing
+```python
+ax.legend(prop=font,frameon=False,ncol=2,labelspacing=0.2,columnspacing=0.5)
+```
+
 # OS 
 ## input file
 ```python

@@ -444,3 +444,53 @@ use the SMILES code and convert to .pdb [smiles2pdb](https://www.novoprolabs.com
 
 download .pdb file and convert to lammps file .lmp [ligpargen](https://zarbi.chem.yale.edu/ligpargen/)
 
+# 2025-08-05
+Cu2+ and Cl- LJ parameters, SPC/E water model
+
+- Cu2+ 
+  - [DOI](https://doi.org/10.1021/ct400146w)
+    - table 6
+  - $\varepsilon=0.00044254$ in kcal/mol
+  - $R_{min}/2=1.149$ in $\AA$
+    - $\sigma=\frac{R_{min}}{2}\cdot2^{\frac{5}{6}}=2.0472852542865$ in $\AA$
+- Cl-
+  - [DOI](https://doi.org/10.1021/jp8001614)
+    - table 5
+  - $\varepsilon=0.012 7850$ in kcal/mol
+  - $R_{min}/2=2.711$ in $\AA$
+    - $\sigma=\frac{R_{min}}{2}\cdot2^{\frac{5}{6}}=4.830452849756919$ in $\AA$
+  
+be careful on the LJ expression in the papers, which may be sometimes different from the one in LAMMPS
+
+in LAMMPS:
+
+$$U_{ij}(r_{ij})=4\varepsilon_{ij}[(\frac{\sigma_{ij}}{r_{ij}})^{12}-(\frac{\sigma_{ij}}{r_{ij}})^6]$$
+
+but in the above two papers:
+
+$$U_{ij}(r_{ij})=\varepsilon_{ij}[(\frac{R_{min,ij}}{r_{ij}})^{12}-2(\frac{R_{min,ij}}{r_{ij}})^6]$$
+
+there is a conversion:
+
+$$R_{min}=\sigma\cdot2^{\frac{1}{6}}$$
+
+$$\sigma=\frac{R_{min}}{2}\cdot2^{\frac{5}{6}}$$
+- `*2**(5/6)
+
+according to [Texler](http://doi.org/10.1039/A704670G), Cu2+ charge is 2 while Cl- is -1
+
+Lorentz-Berthelot mixing rules
+
+# 2025-08-07
+- 4W2
+  - [CuBr2H2O4]0
+  - cubr2h2o4 = -673.76243465
+  - cubr2h2o4-singlecu2-singlebr\*2-singleh2o\*4
+  - -1.9614524500000527
+  - -26.68693359896572
+- 5W1
+  - [CuBrH2O5]+1
+  - cubrh2o5 = -670.47397170
+  - cubrh2o5-singlecu2-singlebr-singleh2o\*5
+  - -1.467878380000002
+  - -19.971512874766027
