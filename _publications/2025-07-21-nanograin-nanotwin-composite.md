@@ -1,12 +1,12 @@
 ---
-title: "Achieving Peta-Ohm Resistance for Semi-Insulating 4H-SiC Devices by Atomic Layer Deposition"
+title: "Nanograin‐Twin‐Nanograin Alternating Composite Structure Enable Improved Cross‐Interface Cu─ Cu Bonding at Low Thermal Budgets"
 collection: publications
 category: manuscripts
 permalink: /publication/2025-07-21-nanograin-nanotwin-composite
 excerpt: 'Cooperative work with Prof. Shien‐Ping Feng and Dr. Cong Chen'
 date: 2025-07-21
 venue: 'Small Methods'
-paperurl: '/files/arXiv2024-achieving-peta-ohm.pdf'
+paperurl: '/files/SM2025-nanograin-nanotwin-composite.pdf'
 citation: 'Cong Chen., Helios Y. Li., Gangqiang, Peng., et al. (2025). &quot;Nanograin‐Twin‐Nanograin Alternating Composite Structure Enable Improved Cross‐Interface Cu─ Cu Bonding at Low Thermal Budgets.&quot; <i>Small Methods</i>. e00831.'
 ---
 
