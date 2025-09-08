@@ -2,11 +2,9 @@
 title: "AMS simulation suite installation"
 date: 2025-05-30
 excerpt: 'AMS suite installaion notes'
-type: notes
+type: record
 tags:
-  - AMS
-  - Quantum Chemistry
-  - notes
+  - record
 ---
 
 Content
