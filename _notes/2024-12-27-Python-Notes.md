@@ -97,6 +97,20 @@ gives sorted array by array[2]
 - axis=0 : number of rows 
 - axis=1 : number of columns 
 
+## Transpose of 1D array
+
+```python
+a=np.array([1,2,3])
+a=a[:,None]
+```
+
+output:
+```python
+array([[1],
+       [2],
+       [3]])
+```
+
 ## Delete specific elements of vector 
 
 `np.delete(a, 3) `
