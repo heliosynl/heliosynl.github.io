@@ -175,6 +175,15 @@ ln -s /home/heliosynl/test /data/newname
 
 it will create a softlink name `newname` at `/data/` directory, pointing to `/home/heliosynl/test`
 
+### make jobs keep running in background after log out in ssh
+```sh
+your_command &
+jobs
+disown %1
+```
+
+`disown` unlocks the relationship between shell and the process. When log out ssh, the process will not receive the SIGHUP signal, so keep running in the background.
+
 # Gnuplot
 ```sh
 gnuplot -p -e "set terminal dumb; plot '' u 1:3 w l" 
